@@ -1,0 +1,27 @@
+{
+  "name": "QuickPackage",
+  "version": "0.1.0",
+  "author": "Ursu Alexandr",
+  "private": true,
+  "devDependencies": {
+    "clean-css": "*",
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-cssc": "*",
+    "grunt-express": "*",
+    "grunt-filerev": "*",
+    "grunt-htmlhint": "*",
+    "grunt-parallel": "*",
+    "grunt-usemin": "*",
+    "grunt-wiredep": "*",
+    "matchdep": "*"
+  },
+  "dependencies": {
+    "bower": "^1.3.12"
+  }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+    <name>JT25_blank</name>
+    <version>2.5.0</version>
+    <creationDate>January 31, 2012</creationDate>
+    <author>TemplatesJoomla.org</author>
+    <authorEmail>support@TemplatesJoomla.org</authorEmail>
+    <authorUrl>http://TemplatesJoomla.org</authorUrl>
+    <copyright>Copyright 2011 - TemplatesJoomla.org</copyright>
+    <license>Creative Commons</license>
+	<description><![CDATA[
+	<h1>BLANK Template for Joomla 2.5</h1>	
+	<img src="../templates/jt25_blank/template_thumbnail.png" align="left" hspace="10" style="padding-right:10px;"/>
+	<b>Blank Joomla 2.5 Template was developed by <a target="_blank" href="http://TemplatesJoomla.org">TemplatesJoomla.org</a>, released under the <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0</a>.<br />
+	<br />Copyright &copy; 2012 TemplatesJoomla.org - All Rights Reserved</b>
+	]]></description>
+	<files>
+		<filename>index.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css/</folder>
+		<folder>images/</folder>
+	</files>
+	<positions>
+		<position>menu</position>
+		<position>right</position>
+		<position>footer</position>
+		<position>bottom1</position>
+		<position>bottom2</position>
+		<position>bottom3</position>
+		<position>bottom4</position>
+	</positions>
+	<config>
+	</config>		
+</extension>

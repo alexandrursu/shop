@@ -1,0 +1,16 @@
+/*
+------------------------------------------------------------------------------------------------------------------------
+Responsive Mobile First => Tablet => Desktop
+------------------------------------------------------------------------------------------------------------------------
+*/
+
+/* START Mobile */
+@media (min-width: 320px) and (max-width: 768px) {
+    @import 'mobile/header';
+    @import 'mobile/main_slider';
+    @import 'mobile/home';
+    @import "mobile/maps";
+    @import "mobile/catalog";
+    @import "mobile/footer";
+
+}

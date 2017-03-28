@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="system" method="upgrade">
+  <name>WWM Product Zoom Pro for Virtuemart</name>
+  <creationDate>Feb, 2014</creationDate>
+  <author>Jobin Jose</author>
+  <copyright>Copyright (C)2013 www.walkswithme.net</copyright>
+  <license>GNU General Public License version 2 or later</license>
+  <authorEmail>jobinjose01@gmail.com</authorEmail>
+  <authorUrl>http://www.walkswithme.net</authorUrl>
+  <version>1.0</version>
+  <description>Just enable the WWM Product Zoom Pro for Virtuemart plugin and set your configuration on the right side.
+    <![CDATA[<ul>
+      <li><a href="http://www.walkswithme.net/virtuemart-product-image-zoom-pro">Documentation</a></li>
+      <li><a href="http://www.walkswithme.net/virtuemart-product-image-zoom-pro">Support</a></li>
+      <li><a href="http://www.walkswithme.net/joomla-extensions">More Joomla Plugins</a></li>
+	  <li>This plugin must required jQuery 1.10.1 or above Please use correct version</li>
+      </ul>
+      <a href="http://www.walkswithme.net">
+      <img alt="walkswithme" src="http://www.walkswithme.net/wp-content/themes/MeetGavernWP/images/gavernwp.png"></a>]]>
+  </description>
+  <files>
+    <filename plugin="vmwwmzoompro">vmwwmzoompro.php</filename>
+    <filename>vmwwmzoompro.xml</filename>
+    <filename>index.html</filename>
+    <filename>css/index.html</filename>
+	<filename>css/zoom.css</filename>
+	<filename>css/jcarousel.css</filename>
+    <filename>images/index.html</filename>
+	<filename>images/loading.gif</filename>
+	<filename>images/blank.png</filename>
+	<filename>images/slider-arrow.png</filename>
+    <filename>js/index.html</filename>
+	<filename>js/zoom.js</filename>
+	<filename>js/touch.js</filename>
+	<filename>js/jquery.mousewheel.js</filename>
+	<filename>js/jquery.slider.js</filename>
+	<filename>js/jquery.nicescroll.min.js</filename>
+	<filename>js/jcarousel.js</filename>
+	<filename>js/slider.js</filename>
+	<filename>js/jquery.js</filename>
+  </files>
+  <languages>
+    <language tag="en-GB">en-GB.plg_system_vmwwmzoompro.ini</language>
+    <language tag="en-GB">en-GB.plg_system_vmwwmzoompro.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="containerwidth" type="text" default="100" label="PLG_WWM_VMZOOM_CWIDTH" description="PLG_WWM_VMZOOM_CWIDTH_DESC"/>
+        <field name="imageWidth" type="text" default="300" label="PLG_WWM_VMZOOM_IMWIDTH" description="PLG_WWM_VMZOOM_IMWIDTH_DESC"/>
+        <field name="imageHeight" type="text" default="300" label="PLG_WWM_VMZOOM_IMHEIGHT" description="PLG_WWM_VMZOOM_IMHEIGHT_DESC"/>
+        <field name="thumbimageWidth" type="text" default="80" label="PLG_WWM_VMZOOM_TWIDTH" description="PLG_WWM_VMZOOM_TWIDTH_DESC"/>
+        <field name="spacer" type="spacer" label="PLG_WWM_VMZOOM_SLIDER" description="PLG_WWM_VMZOOM_SLIDER_DESC"/>
+        <field name="slider" type="radio" default="1" label="PLG_WWM_VMZOOM_SLIDEREB" description="PLG_WWM_VMZOOM_SLIDEREB_DESC">
+          <option value="1">ON</option>
+          <option value="0">OFF</option>
+        </field>
+        <field name="zoomType" type="list" default="Dock" label="PLG_WWM_VMZOOM_ZOOMTP" description="PLG_WWM_VMZOOM_ZOOMTP_DESC">
+          <option value="dock">Zoom1</option>
+        </field>
+       
+      </fieldset>
+      <fieldset name="advanced">
+        <field name="show_jquery" type="list" default="1" label="PLG_WWM_VMZOOM_EBJQ" description="PLG_WWM_VMZOOM_EBJQ_DESC">
+          <option value="1">ON</option>
+          <option value="0">OFF</option>
+        </field>
+		<field name="mainClass" type="text" default="main-image" label="PLG_WWM_VMZOOM_MDIV" description="PLG_WWM_VMZOOM_MDIV_DESC"/>
+		<field name="aImageClass" type="text" default="additional-images" label="PLG_WWM_VMZOOM_AIMDIV" description="PLG_WWM_VMZOOM_AIMDIV_DESC"/>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

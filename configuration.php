@@ -1,0 +1,67 @@
+<?php
+class JConfig {
+	public $offline = '0';
+	public $offline_message = 'Site-ul se află în construcție.<br />
+Vă rugăm să reveniți mai tîrziu.<br />
+Vă mulțumim!';
+	public $display_offline_message = '1';
+	public $offline_image = '';
+	public $sitename = 'Maicom - haine de Moldova!';
+	public $editor = 'jce';
+	public $captcha = '0';
+	public $list_limit = '100';
+	public $access = '1';
+	public $debug = '0';
+	public $debug_lang = '0';
+	public $dbtype = 'mysqli';
+	public $host = 'localhost';
+	public $user = 'root';
+	public $db = 'maicom.md';
+	public $dbprefix = 'l50ti_';
+	public $live_site = '';
+	public $secret = 'kSEidtKlAF43nG3d';
+	public $gzip = '0';
+	public $error_reporting = 'none';
+	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
+	public $ftp_host = '127.0.0.1';
+	public $ftp_port = '21';
+	public $ftp_user = 'marketing';
+	public $ftp_pass = 'maicom2014';
+	public $ftp_root = '';
+	public $ftp_enable = '0';
+	public $offset = 'UTC';
+	public $mailer = 'mail';
+	public $mailfrom = 'sales@maicom.md';
+	public $fromname = 'Maicom';
+	public $sendmail = '/usr/sbin/sendmail';
+	public $smtpauth = '0';
+	public $smtpuser = '';
+	public $smtppass = '';
+	public $smtphost = 'localhost';
+	public $smtpsecure = 'none';
+	public $smtpport = '25';
+	public $caching = '0';
+	public $cache_handler = 'file';
+	public $cachetime = '15';
+	public $MetaDesc = 'Compania MAICOM produce si comercializeaza confectii din  tricot, haine pentru barbati, femei, copii. Detalii despre brand si magazine tel:+373 782 22 211!';
+	public $MetaKeys = 'haine moldova, haine chisinau, fashion moldova, fashion chisinau, branduri moldova,haine femei, haine barbati, haine copii, shoping online, magazin de haine online';
+	public $MetaTitle = '1';
+	public $MetaAuthor = '1';
+	public $MetaVersion = '0';
+	public $robots = '';
+	public $sef = '0';
+	public $sef_rewrite = '0';
+	public $sef_suffix = '0';
+	public $unicodeslugs = '0';
+	public $feed_limit = '10';
+	public $log_path = '/var/www/maicom.md/log';
+	public $tmp_path = '/var/www/maicom.md/tmp';
+	public $lifetime = '15';
+	public $session_handler = 'database';
+	public $MetaRights = '';
+	public $sitename_pagetitles = '0';
+	public $force_ssl = '0';
+	public $feed_email = 'author';
+	public $cookie_domain = '';
+	public $cookie_path = '';
+}

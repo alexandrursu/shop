@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 	type="module"	version="3.0"	  client="site"	  method="upgrade">
+     <name>Wide Slide</name>
+     <author>Pixel Point Creative</author>
+     <creationDate>February 2013</creationDate>
+     <copyright>(C) Pixel Point Creative LLC</copyright>
+     <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+     <authorEmail>info@pixelpointcreative.com</authorEmail>
+     <authorUrl>www.pixelpointcreative.com</authorUrl>
+     <version>1.0</version>
+     <description>     
+    	<![CDATA[
+	<style type="text/css">
+		.panel {background: #ddd;
+		background-image: -moz-linear-gradient(100% 100% 90deg, rgba(225,225,225,1), rgba(255,255,255,1));
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,1)), to(rgba(225,225,225,1)));
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1e1e1');
+		-moz-border-radius: 2px 2px 2px 2px;
+		-webkit-border-radius: 2px 2px 2px 2px;
+		border-radius: 2px 2px 2px 2px;
+		-moz-box-shadow: 1px 1px 2px #ddd;
+		-webkit-box-shadow: 1px 1px 2px #ddd;
+		border-box-shadow: 1px 1px 2px #ddd;
+		border: 1px solid #ccc;
+		padding: 6px 10px;		
+		color: #444;		
+		text-decoration: none;}
+		.pane-sliders .title {padding: 4px; }
+		.pane-sliders .panel h3 {border-bottom:none;}
+		.panelform a {color:#828627;}
+		table.admintable td.paramlist_key {font-weight:normal;text-transform:uppercase;text-align:left;}
+		table.admintable td.paramlist_value label {text-transform:none;}
+		table.admintable td.key, table.admintable td.paramlist_key,.pane-sliders .content,.pane-sliders .panel h3, div.panel fieldset {background:none;}
+		div.panel fieldset {margin-bottom:0;padding-bottom:0;}
+		table.admintable td.key, table.admintable td.paramlist_key {border:none;}
+		.panelform input, .panelform select{padding:5px;border-radius:3px; }
+		.panelform input[type="radio"]{margin: 10px 5px 0 0;}
+		#jform_params_target { width: 110px;}	
+		fieldset.panelform label, fieldset.panelform div.paramrow label, fieldset.panelform span.faux-label { padding: 5px 5px 0 0;}
+  .pane-toggler-down span {
+    background: url("../modules/mod_wide_slide/assets/arrows_ext.png") no-repeat scroll bottom left transparent !important;
+    padding: 7px 0px 7px 40px;
+    padding-left:34px!important;
+    font-size: 15px;
+    font-weight:normal;
+   color:#394a12;
+}
+.pane-toggler span {
+    background: url("../modules/mod_wide_slide/assets/arrows_ext.png") no-repeat top left transparent !important;
+    padding: 7px 0px 7px 40px;
+    padding-left:34px!important;
+    font-size: 15px;
+    font-weight:normal;
+    color:#394a12;
+   }
+	</style>
+	Wide Slide is a free responsive, jQuery image slideshow with captions, decriptions and read more.
+	]]></description>
+     <files>
+          <filename module="mod_wide_slide">mod_wide_slide.php</filename>
+		  <filename>helper.php</filename>		
+		  <folder>assets</folder>
+		  <folder>classes</folder>
+		  <folder>tmpl</folder>
+		  <folder>elements</folder>
+     </files> 
+	 <config>
+		 <fields name="params" addfieldpath="/modules/mod_wide_slide/elements">
+		 
+		 <fieldset name="gen" label="General Settings">
+		<field label="Version Check" type="upgradecheck" />
+		<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="" />
+		<field name="folder" type="text" size="50" default="images/gallery" label="Image Folder" description="Image Folder" />
+	   <field name="item_default" type="text" size="50" default="1" label="Default Item" description="Enter Start Item. The value is integer" />
+		<field name="orderby" type="list" default="0" label="Sort Type" description="SORT TYPE DESC">
+			<option value="0">Name</option>
+			<option value="1">Time</option>
+		</field>
+		<field name="sort" type="list" default="0" label="Sort Order" description="SORT ORDER DESC">
+			<option value="0">Random</option>
+			<option value="1">Ascending</option>
+			<option value="2">Descending</option>
+		</field>
+		 <field name="show_button" type="radio" class="btn-group" default="1" label="Show Next/Previous Button" description="Show Next/Previous Button">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		
+		<field name="timer" type="radio" class="btn-group" default="block" label="Show Timers" description="">
+			<option value="block">Yes</option>
+			<option value="none">No</option>
+		</field>
+		<field name="auto_play" type="radio" class="btn-group" default="1" label="Auto Play" description="Auto Play Slideshow">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="duration" type="text" default="1000" label="Duration" description="Fade Speed in miliseconds" />
+		<field name="pause" type="text" default="6000" label="Pause Time" description="Autoslide pause between slides in miliseconds" />
+		</fieldset>
+		
+		<fieldset name="cap_settings" label="Caption/Description/Read More Settings" >
+		<field name="margin_top" type="text" default="7%" label="Caption Area Top Margin" description="Use to adjust the distance from top for your overlay text areas. Use px or percentage, but make sure to include the % or px." />
+		<field name="show_caption" type="radio" class="btn-group" default="1" label="Show Caption" description="Show Title">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="caption_color" type="text" default="#FFFFFF" label="Caption Color" description="" />
+		
+		<field name="show_desc" type="radio" class="btn-group" default="1" label="Show Description" description="Show Description">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="desc_color" type="text" default="#FFCC33" label="Description Color" description="" />
+		
+		<field name="show_readmore" type="radio" class="btn-group" default="1" label="Show Read More" description="Show Read More">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="readmoreText" type="text" default="Read more" label="Read more Text" description="" />
+		
+		<field name="readmore_color" type="text" default="#919191" label="Readmore Color" description="" />
+		
+		<field name="description" type="textarea" cols="60" rows="10" default="1.jpg::caption=Caption or Title&amp;desc=Description text is here&amp;url=http://www.pixelpointcreative.com&amp;target=_blank" label="Caption/Description/Link" description="Specific parameter for each image. Images can have or don't have link to another page. One image per line." />
+		
+		</fieldset>
+		
+		
+		 <fieldset name="img_settings" label="Image Settings" >
+		 <field name="mwidth" type="text" default="100%" label="Max Image Width" description="Max Image Width. Make sure to enter px or %. You can use either. The slides will be responsive, but you can set this if you wish for the image not to exceed a certain size." />
+		<field name="lwidth" type="text" default="1300" label="Resized Image Width" description="Resized Image Width. Built in image reszing to optimize image size." />
+		<field name="lheight" type="text" default="730" label="Resized Image Height" description="Resized Image Height. Built in image reszing to optimize image size." />
+		<field name="item_image_function_main" default="fill" type="thumbnailmode" label="Image Mode">					
+			<option value="stretch">Stretch</option>
+			<option value="center">Center</option>
+			<option value="fill">Fill</option>
+			<option value="fit">Fit</option>					
+			<option value="none">None</option>
+		</field>
+		</fieldset>
+			
+			<fieldset name="jQuery" label="jQuery"> 
+			                    
+				<field name="include_jquery" class="btn-group" type="radio" default="1" label="Include jQuery Library" description="Include jQuery Library">
+             		<option value="1">Yes</option>
+             		<option value="0">No</option>
+                    
+                </field>										
+				
+		</fieldset>
+		</fields>
+     </config>
+</extension>

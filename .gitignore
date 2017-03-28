@@ -2,3 +2,5 @@
 .idea/
 /images/
 /cache/
+/templates/jt25_blank/node_modules/
+/templates/jt25_blank/.sass-cache
