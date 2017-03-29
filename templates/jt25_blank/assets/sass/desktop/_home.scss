@@ -308,6 +308,8 @@ div#menu {
 }
 
 .n2-ss-layers-container {
+  //font-family: 'elektra','Helvetica','sans-serif' !important;
+   color: $black !important;
   .hover-animation {
     transform: translateY(55px);
     transition: 0.5s ease;
@@ -318,6 +320,20 @@ div#menu {
     transform: translateY(55px);
   }
 
+  &:hover {
+    .hover-animation {
+      transform: translateY(0);
+      transition: 0.5s ease;
+    }
+
+    .hover-animation-border {
+      transition: 0.5s ease;
+      transform: translateY(0px);
+    }
+  }
+}
+
+.n2-padding {
   &:hover {
     .hover-animation {
       transform: translateY(0);

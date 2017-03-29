@@ -1,0 +1,185 @@
+footer {
+  height: 259px;
+  padding-top: 85px;
+  position: relative;
+
+  .container {
+    background: #e2e2e2;
+    position: relative;
+    padding-top: 75px;
+
+    .socials-top {
+      margin-right: 20px;
+      position: absolute;
+      top: -46px;
+      left: 248px;
+      li {
+        margin-right: 90px;
+
+        a {
+          width: 96px;
+          height: 96px;
+          display: flex;
+          border: 2px solid #fff;
+          border-radius: 100px;
+          align-items: center;
+          transition: 0.5s ease;
+          background: #c3c3c3;
+          text-decoration: none;
+          justify-content: center;
+
+          &:hover {
+            i {
+              color: $black;
+              transition: 0.5s ease;
+            }
+          }
+
+          i {
+            font-size: 47px;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .acymailing_module {
+      height: 24px;
+      top: 75px;
+      display: block;
+      position: absolute;
+      width: 460px;
+      left: 300px;
+
+      .readon {
+        position: absolute;
+        z-index: 1;
+        margin: 0;
+        width: auto;
+        height: 24px;
+        color: #838383;
+        text-align: right;
+        text-decoration: none;
+        padding-right: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: 0.5s ease;
+      }
+
+      div.acymailing_module_success {
+        color: red;
+        background-color: #fff;
+        padding: 0;
+        z-index: 10;
+        height: 24px !important;
+        margin-bottom: 10px;
+        line-height: 25px;
+        text-align:center;
+      }
+      .acymailing_introtext {
+        padding-bottom: 10px;
+        display: block;
+        float: left;
+        height: 24px;
+        line-height: 28px;
+      }
+      .acymailing_form {
+        float: right;
+        border: 0px !important;
+
+        .acymailing_module_form {
+          td {
+            padding-bottom: 0px;
+          }
+        }
+        .inputbox {
+          background: none repeat scroll 0 0 white;
+          border: 0 none;
+          color: #cdc1aa;
+          padding: 0 9px;
+          width: 251px!important;
+          font-size: 12px;
+          font-family: elektra;
+          margin: 0 !important;
+          height: 24px;
+          line-height: 24px;
+        }
+
+        .acysubbuttons .subbutton {
+          background: #c3c3c3;
+          border: medium none;
+          height: 24px;
+          text-align: center;
+          width: 72px;
+          font-size: 14px;
+          font-family: elektra;
+          color: #fff;
+          padding: 0;
+          line-height: 25px;
+          border-radius: 0 !important;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .copyright {
+      display: block;
+      height: 20px;
+      line-height: 15px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      text-align: center;
+      color: #a6a6a6;
+      font-size: 10px;
+
+      a {
+        color: #a6a6a6;
+        margin-left: 5px;
+      }
+    }
+
+    .webdesign {
+      color: #333333;
+      font-size: 11px;
+      height: 130px;
+      text-align: right;
+      width: 1004px;
+    }
+    .footer-menu {
+      margin-top: 47px;
+      height: 80px;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+
+      div.bottom_menu {
+        width: inherit;
+        flex-grow: 1;
+        justify-content: center;
+        text-align: center;
+
+        h3 {
+          text-align: center;
+          font-size: 12px;
+          line-height: 12px;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        ul {
+          margin: 0;
+          li {
+            text-align: center;
+            list-style-type: none;
+            a {
+              color: #838383;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

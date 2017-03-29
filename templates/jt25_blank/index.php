@@ -159,147 +159,143 @@ endif; ?>
            </div>
     	</div>
 	</nav>
-<div id="container-main">
-<div id="body">
-    <div class="container">
-        <div class="row row-no-padding">
-             <div class="col-md-12 col-xs-12">
-                <?php if ($this->countModules('slider')) : ?>
-                <div class="main-slider">
-                    <jdoc:include type="modules" name="slider" style="xhtml" />
+    <div id="container-main">
+        <div id="body">
+            <div class="container">
+                <div class="row row-no-padding">
+                     <div class="col-md-12 col-xs-12">
+                        <?php if ($this->countModules('slider')) : ?>
+                        <div class="main-slider">
+                            <jdoc:include type="modules" name="slider" style="xhtml" />
+                        </div>
+                        <?php endif; ?>
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 m-bottom-10">
+                        <jdoc:include type="modules" name="basic" style="xhtml" />
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 m-bottom-10">
+                        <jdoc:include type="modules" name="active" style="xhtml" />
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 m-bottom-10">
+                        <jdoc:include type="modules" name="seductive" style="xhtml" />
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                         <div class="row row-no-padding">
+                            <div class="col-md-12 col-xs-12 m-bottom-10">
+                                <jdoc:include type="modules" name="reduceri" style="xhtml" />
+                            </div>
+                            <div class="col-md-12 col-xs-12 m-bottom-10">
+                                <jdoc:include type="modules" name="stock" style="xhtml" />
+                            </div>
+                         </div>
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 m-bottom-10">
+                        <jdoc:include type="modules" name="maiouri" style="xhtml" />
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 m-bottom-10">
+                        <jdoc:include type="modules" name="scoala" style="xhtml" />
+                     </div>
                 </div>
+            </div>
+
+            <div id="breadcrumbs" <?php if ($this->countModules( 'acymailing' )){ echo 'class="no-breadcrumbs"'; }  ?>><jdoc:include type="modules" name="breadcrumbs" style="xhtml" /></div>
+            <div id="content" <?php if ($this->countModules( 'magazin' )){ echo 'class="smaller-container"'; }  ?>>
+                <div id="component" <?php if ($this->countModules( 'sidebar' )){ echo 'class="smaller-container"'; }  ?>>
+                    <?php if ($this->countModules('content-maps')) : ?><jdoc:include type="modules" name="content-maps" style="xhtml" /><?php endif; ?>
+                    <?php if ($this->countModules('right-sidebar')) : ?><div class="right-sidebars"><jdoc:include type="modules" name="right-sidebar" style="xhtml" /></div><?php endif; ?>
+                    <jdoc:include type="message" />
+                    <jdoc:include type="component" />
+                </div>
+                <?php if ($this->countModules('right')) : ?>
+                    <div id="rightbar">
+                        <jdoc:include type="modules" name="right" style="xhtml" />
+                    </div>
                 <?php endif; ?>
-             </div>
-             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <jdoc:include type="modules" name="basic" style="xhtml" />
-             </div>
-             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <jdoc:include type="modules" name="active" style="xhtml" />
-             </div>
+                <div class="clr"></div>
+            </div>
+
+
+            <div class="pop1" style="display:none;">
+                <div class="middle"><img src="http://maicom.md/images/maicom/ghid/ghid-marimi.jpg" /><span class="hidden-marimi">X</span></div>
+            </div>
+            <div class="pop2" style="display:none;">
+                <div class="middle"><img src="http://maicom.md/images/maicom/ghid/ghid-simboluri.jpg" /><span class="hidden-marimi">X</span></div>
+            </div>
+            <div class="pop3" style="display:none;">
+                <div class="middle"><img src="http://maicom.md/images/maicom/ghid/ghid-marimi-ru.jpg" /><span class="hidden-marimi">X</span></div>
+            </div>
+            <div class="pop4" style="display:none;">
+                <div class="middle"><img src="http://maicom.md/images/maicom/ghid/ghid-simboluri-ru.jpg" /><span class="hidden-marimi">X</span></div>
+            </div>
         </div>
     </div>
 
-	<div id="breadcrumbs" <?php if ($this->countModules( 'acymailing' )){ echo 'class="no-breadcrumbs"'; }  ?>><jdoc:include type="modules" name="breadcrumbs" style="xhtml" /></div>
-	<div id="content" <?php if ($this->countModules( 'magazin' )){ echo 'class="smaller-container"'; }  ?>>   
-		<div class="fl-mega"><jdoc:include type="modules" name="sidebar" style="xhtml" /></div>
-		
-		<div id="component" <?php if ($this->countModules( 'sidebar' )){ echo 'class="smaller-container"'; }  ?>>
-			<?php if ($this->countModules('sidebar')) : ?><jdoc:include type="modules" name="category" style="xhtml" /><?php endif; ?>
-            <?php if ($this->countModules('stock')) : ?><jdoc:include type="modules" name="stock" style="xhtml" /><?php endif; ?>
-            <?php if ($this->countModules('content-maps')) : ?><jdoc:include type="modules" name="content-maps" style="xhtml" /><?php endif; ?>
-            <?php if ($this->countModules('right-sidebar')) : ?><div class="right-sidebars"><jdoc:include type="modules" name="right-sidebar" style="xhtml" /></div><?php endif; ?>
-			<jdoc:include type="message" />
-			<jdoc:include type="component" />
-			
-		</div>
-		<div id="recent-vizitate"><jdoc:include type="modules" name="recent-vizitate" style="xhtml" /></div>
-		<?php if ($this->countModules('right')) : ?>
-			<div id="rightbar">
-				<jdoc:include type="modules" name="right" style="xhtml" />
-			</div>
-		<?php endif; ?>
-		<div class="clr"></div>
-		<?php if ($this->countModules('slider')) : ?>
-			<div class="middle">
-				<div class="discount colectii-banner">
-					<jdoc:include type="modules" name="collection" style="xhtml" />
-				</div>
-<!-- 				<div class="discount discount-banner">
-					<jdoc:include type="modules" name="discount" style="xhtml" />
-				</div> -->
-				<div class="discount sale-banner">
-					<jdoc:include type="modules" name="sale" style="xhtml" />
-				</div>
-				<div class="clear"></div>
-			</div>
-		<?php endif; ?>
-        <?php if ($this->countModules('slider')) : ?>
-			<div class="middle only-home">
-					<jdoc:include type="modules" name="recent-home" style="xhtml" />             
-				<div class="clear"></div>
-			</div>
-			<div class="middle">
-			    <div class="pre-footer">
-				    <div class="width33 no-left-margin" >
-					<jdoc:include type="modules" name="news" style="xhtml" />
-					<div class="video-maicom"><jdoc:include type="modules" name="video" style="xhtml" /></div>
-					</div>
-					<div class="width33">
-					<jdoc:include type="modules" name="contacts" style="xhtml" />
-					<jdoc:include type="modules" name="acymailing" style="xhtml" />
-					</div>
-					<div class="width33">
-					<jdoc:include type="modules" name="facebook" style="xhtml" />
-					</div>
-				</div>
-				<div class="clear"></div>
-			</div>
-		<?php endif; ?>
+    <!-- Start footer container -->
+    <footer>
+        <div class="container">
+            <div class="row row-no-padding">
+                <ul class="socials-top">
+                     <li><a href="https://www.facebook.com/Maicom.md"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     <li><a href="https://www.youtube.com/channel/UCxzdfxfmZYgr6HJ_Y697klg"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                     <li><a href="https://www.instagram.com/maicom.md/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+                <jdoc:include type="modules" name="acymailing" style="xhtml" />
 
-			<ul class="socials-top">
-        		<li><a href="https://www.facebook.com/Maicom.md"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        		<li><a href="https://www.instagram.com/maicom.md/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        		<li><a href="https://www.youtube.com/channel/UCxzdfxfmZYgr6HJ_Y697klg"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-        	</ul>
-	</div>
+                <div class="webdesign hidden-xs hidden-sm">
+                      <div class="footer-menu">
+                        <?php
+                            if($lang->getTag() == 'ru-RU'){
+                                $heading1 = 'ИНФОРМАЦИЯ';
+                                $heading2 = 'УСЛУГИ';
+                                $heading3 = 'KОМПАНИЯ';
+                                $heading4 = 'СТАНЬ ФАНОМ VIP';
+                            }elseif ($lang->getTag() == 'ro-RO') {
+                                $heading1 = 'INFORMATION';
+                                $heading2 = 'SERVICE';
+                                $heading3 = 'COMPANY';
+                                $heading4 = 'BECOME A FAN';
+                            }else{
+                                $heading1 = 'INFORMAŢII';
+                                $heading2 = 'SERVICII';
+                                $heading3 = 'COMPANIA';
+                                $heading4 = 'DEVENIŢI FAN';
+                            }
+                        ?>
+                        <div class="bottom_menu">
+                            <h3><?php echo $heading1; ?></h3>
+                            <jdoc:include type="modules" name="bottom1" style="xhtml" />
+                        </div>
+                        <div class="bottom_menu">
+                            <h3><?php echo $heading2; ?></h3>
+                            <jdoc:include type="modules" name="bottom2" style="xhtml" />
+                        </div>
+                        <div class="bottom_menu">
+                            <h3><?php echo $heading3; ?></h3>
+                            <jdoc:include type="modules" name="bottom3" style="xhtml" />
+                        </div>
+                        <div class="bottom_menu">
+                            <h3><?php echo $heading4; ?></h3>
+                            <jdoc:include type="modules" name="bottom4" style="xhtml" />
+                        </div>
+                      </div>
+                </div>
+                <div class="clear"></div>
+                <div class="hidden-xs hidden-sm">
+                    <jdoc:include type="modules" name="footer"/>
+                </div>
+                <div class="hidden-lg hidden-md">
+                    <jdoc:include type="modules" name="footer-mobile"/>
+                </div>
+                <div class="clear"></div>
+                <div class="col-md-12 col-xs-12">
+                      <span class="copyright">2014 maicom.md Toate drepturile rezervate <a href="https://www.linkedin.com/in/ursu-alexandr-5b212534/" target="_blank" title="Web development">Powered by Ursu A.</a></span>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </footer>
 
-
-	<div class="pop1" style="display:none;">
-		<div class="middle"><img src="http://maicom.md/images/maicom/ghid/ghid-marimi.jpg" /><span class="hidden-marimi">X</span></div>
-	</div>
-	<div class="pop2" style="display:none;">
-		<div class="middle"><img src="http://maicom.md/images/maicom/ghid/ghid-simboluri.jpg" /><span class="hidden-marimi">X</span></div>
-	</div>
-	<div class="pop3" style="display:none;">
-		<div class="middle"><img src="http://maicom.md/images/maicom/ghid/ghid-marimi-ru.jpg" /><span class="hidden-marimi">X</span></div>
-	</div>
-	<div class="pop4" style="display:none;">
-		<div class="middle"><img src="http://maicom.md/images/maicom/ghid/ghid-simboluri-ru.jpg" /><span class="hidden-marimi">X</span></div>
-	</div>
-	<div class="webdesign">
-	  <div class="footer-menu">
-        <?php
-            if($lang->getTag() == 'ru-RU'){
-                $heading1 = 'ИНФОРМАЦИЯ';
-                $heading2 = 'УСЛУГИ';
-                $heading3 = 'KОМПАНИЯ';
-                $heading4 = 'СТАНЬ ФАНОМ VIP';
-            }elseif ($lang->getTag() == 'ro-RO') {
-                $heading1 = 'INFORMATION';
-                $heading2 = 'SERVICE';
-                $heading3 = 'COMPANY';
-                $heading4 = 'BECOME A FAN';
-            }else{
-                $heading1 = 'INFORMAŢII';
-                $heading2 = 'SERVICII';
-                $heading3 = 'COMPANIA';
-                $heading4 = 'DEVENIŢI FAN';
-            }
-        ?>
-	  	<div class="bottom_menu">
-			<h3><?php echo $heading1; ?></h3>
-	  		<jdoc:include type="modules" name="bottom1" style="xhtml" />
-	  	</div>
-	  	<div class="bottom_menu">
-	  		<h3><?php echo $heading2; ?></h3>
-	  		<jdoc:include type="modules" name="bottom2" style="xhtml" />
-	  	</div>
-	  	<div class="bottom_menu">
-	  		<h3><?php echo $heading3; ?></h3>
-	  		<jdoc:include type="modules" name="bottom3" style="xhtml" />
-	  	</div>
-	  	<div class="bottom_menu">
-	  		<h3><?php echo $heading4; ?></h3>
-	  		<jdoc:include type="modules" name="bottom4" style="xhtml" />
-	  	</div>
-	  </div>
-	  <span class="copyright">2014 maicom.md Toate drepturile rezervate <a href="https://www.linkedin.com/in/ursu-alexandr-5b212534/" target="_blank" title="Web development">Powered by Ursu A.</a></span>
-	</div>
-    <div id="footer">
-        <jdoc:include type="modules" name="footer"/>
-    </div>
-    </div>
-</div>
+    <!-- End footer container -->
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADcoZE_vF1wLs9ojrYdu4vz2beOiD1rR4&hl=ro"></script>
 <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/assets/js/concat/logic.min.js"></script>

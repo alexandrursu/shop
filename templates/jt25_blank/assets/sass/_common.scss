@@ -12,4 +12,20 @@
 }
 
 
+.m-bottom-10 {
+  margin-bottom: 10px;
+}
+.m-top-10 {
+  margin-top: 10px;
+}
 
+.border-box {
+  a {
+    box-shadow: inset 0 0 0 1px $black !important;
+
+    &:hover {
+      box-shadow: inset 0 0 0 2px $black !important;
+    }
+  }
+
+}

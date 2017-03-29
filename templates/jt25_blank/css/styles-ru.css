@@ -595,38 +595,6 @@ background: none repeat scroll 0 0 rgba(224, 15, 19, 0.6);
 
 
 
-
-
-.readon {
-
-    background: url("../images/header-nice.png") no-repeat scroll 0 bottom ;
-
-    position: absolute;
-
-    z-index: 1;
-
-    margin: 10px 0px 0px -10px;
-
-    width: 90px;
-
-    height: 30px;
-
-    color: #fff;
-
-    text-align: right;
-
-    text-decoration: none;
-
-    padding-right: 10px;
-
-    font-size: 12px;
-
-    text-transform: uppercase;
-
-	transition:0.5s ease;
-
-}
-
 /* Home page products */
 
 
@@ -663,10 +631,6 @@ background: none repeat scroll 0 0 rgba(224, 15, 19, 0.6);
 
 
 
-.acymailing_module_success {text-align:center;}
-
-
-
 
 
 /* Home page products */
@@ -676,90 +640,6 @@ background: none repeat scroll 0 0 rgba(224, 15, 19, 0.6);
 .contact-mod {width:320px; height:150px; display:block; position:relative; margin-bottom:20px;}
 
 
-
-.acymailing_form {
-
-    margin-top: 75px !important;
-
-}
-
-
-
-.acymailing_form .inputbox {
-
-    background: none repeat scroll 0 0 rgb(255, 255, 255);
-
-    border: 0 none;
-
-    color: rgb(205, 193, 170);
-
-    padding: 9px;
-
-    width: 190px !important;
-
-    font-size: 18px;
-
-    font-family: elektra;
-
-}
-
-
-
-.acysubbuttons .subbutton {
-
-    background: none repeat scroll 0 0 rgb(239, 226, 202) !important;
-
-    border: medium none;
-
-    height: 40px;
-
-    text-align: center;
-
-    width: 40px;
-
-    font-size: 20px;
-
-    font-family: elektra;
-
-	color:#575756;
-
-}
-
-
-
-
-
-.contact-mod .readon {
-
-    background: url("../images/header-nice.png") no-repeat scroll 0 bottom rgba(0, 0, 0, 0);
-
-    color: rgb(255, 255, 255);
-
-    font-size: 12px;
-
-    height: 30px;
-
-    left: -10px;
-
-	margin:0;
-
-    top: 10px;
-
-    position: absolute;
-
-    text-align: right;
-
-    text-decoration: none;
-
-    text-transform: uppercase;
-
-    transition: all 0.5s ease 0s;
-
-    width: 90px;
-
-    z-index: 1;
-
-}
 
 
 
@@ -827,24 +707,6 @@ background: none repeat scroll 0 0 rgba(224, 15, 19, 0.6);
     color: #575756;
 
 	transition:0.5s ease;
-
-}
-
-
-
-.acymailing_module {
-
-    background: url("../images/newsletter.jpg") no-repeat scroll 0 bottom rgba(0, 0, 0, 0);
-
-    height: 150px;
-
-    margin-top: 10px;
-
-    display: block;
-
-    position: relative;
-
-    width: 320px;
 
 }
 
@@ -1245,27 +1107,7 @@ blockquote {margin:5px; padding:5px; font-size:18px; font-family: "Times New Rom
 
 /* Footer */
 
-#footer {width:900px; margin:0 auto; padding:0;}
 
-
-
-.webdesign {
-
-    color: #333333;
-
-    font-size: 11px;
-
-    height: 40px;
-
-    margin: 0 auto 10px;
-
-    text-align: right;
-
-    width: 1004px;
-
-}
-
-.webdesign a { color:#333; text-decoration:none}
 
 
 
@@ -1641,28 +1483,6 @@ div.marimi {
 .moduletable.banner-categorii {margin-bottom:20px;}
 
 
-
-
-
-.copyright {
-
-    display: block;
-
-    float: right;
-
-    height: 20px;
-
-    line-height: 15px;
-
-    margin: 10px 0 0;
-
-    padding: 0;
-
-    position: relative;
-
-    width: 218px;
-
-}
 
 .browse-view > .vm-pagination {
 
@@ -3578,55 +3398,6 @@ h2.mr1 {display:block !important;
 
 }
 
-
-
-div.bottom_menu{
-
-    width: 160px;
-
-    float: left;
-
-}
-
-div.bottom_menu ul.menubottom{
-
-    height: 140px;
-
-
-
-    list-style: none;
-
-    text-align: left;
-
-    margin: 0px;
-
-    line-height: 20px;
-
-    font-size: 12px;
-
-    text-shadow: 0px 0px 0px;
-
-}
-
-div.bottom_menu ul.menubottom li{
-
-    float: none;
-
-}
-
-div.bottom_menu h3 {
-
-    text-align: left;
-
-    font-size: 16px;
-
-    line-height: 14px;
-
-    text-transform: uppercase;
-
-    text-shadow: 0px 0px 0px;
-
-}
 
 .home-featured h3 {
     position: relative;
