@@ -98,7 +98,12 @@ endif; ?>
                                 <?php endif; ?>
                                 <!--- If user is logged in --->
 
-                                 <li>Wishlist <jdoc:include type="modules" name="contacte-top" style="none" /><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                                 <li>
+                                    <a href="index.php?option=com_easycompare&view=easycompares">Wishlist
+                                        <jdoc:include type="modules" name="wishlist" style="none" />
+                                    </a>
+                                    <a href="index.php?option=com_easycompare&view=easycompares"><i class="fa fa-heart-o" aria-hidden="true"></i> <span class="whishlist-count"></span></a>
+                                 </li>
                             </ul>
                         </div>
                     </div>
@@ -151,7 +156,7 @@ endif; ?>
 
                         <span class="shopping-bag-icon fr"></span>
                         <jdoc:include type="modules" name="cosul" style="none" />
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <a href="index.php?option=com_easycompare&view=easycompares"><i class="fa fa-heart-o" aria-hidden="true"><span class="whishlist-count"></span></i></a>
                         <jdoc:include type="modules" name="register" style="none" />
                     </div>
                 </div>
@@ -161,6 +166,7 @@ endif; ?>
 	</nav>
     <div id="container-main">
         <div id="body">
+            <?php if ($this->countModules('slider')) : ?>
             <div class="container">
                 <div class="row row-no-padding">
                      <div class="col-md-12 col-xs-12">
@@ -197,13 +203,18 @@ endif; ?>
                      </div>
                 </div>
             </div>
+            <?php endif; ?>
 
-            <div id="breadcrumbs" <?php if ($this->countModules( 'acymailing' )){ echo 'class="no-breadcrumbs"'; }  ?>><jdoc:include type="modules" name="breadcrumbs" style="xhtml" /></div>
+            <?php if (!$this->countModules('slider')) : ?>
+             <div id="breadcrumbs" <?php if ($this->countModules( 'acymailing' )){ echo 'class="no-breadcrumbs"'; }  ?>><jdoc:include type="modules" name="breadcrumbs" style="xhtml" /></div>
+            <?php endif; ?>
             <div id="content" <?php if ($this->countModules( 'magazin' )){ echo 'class="smaller-container"'; }  ?>>
                 <div id="component" <?php if ($this->countModules( 'sidebar' )){ echo 'class="smaller-container"'; }  ?>>
                     <?php if ($this->countModules('content-maps')) : ?><jdoc:include type="modules" name="content-maps" style="xhtml" /><?php endif; ?>
                     <?php if ($this->countModules('right-sidebar')) : ?><div class="right-sidebars"><jdoc:include type="modules" name="right-sidebar" style="xhtml" /></div><?php endif; ?>
-                    <jdoc:include type="message" />
+                    <div class="container">
+                        <jdoc:include type="message" />
+                    </div>
                     <jdoc:include type="component" />
                 </div>
                 <?php if ($this->countModules('right')) : ?>
@@ -212,20 +223,27 @@ endif; ?>
                     </div>
                 <?php endif; ?>
                 <div class="clr"></div>
+                <div class="container">
+                    <div class="row row-no-padding">
+                        <div class="col-md-12 col-xs-12">
+                            <jdoc:include type="modules" name="recent-vizitate" style="xhtml" />
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
             <div class="pop1" style="display:none;">
-                <div class="middle"><img src="http://maicom.md/images/maicom/ghid/ghid-marimi.jpg" /><span class="hidden-marimi">X</span></div>
+                <div class="middle"><img src="./images/maicom/ghid/ghid-marimi.jpg" /><span class="hidden-marimi">X</span></div>
             </div>
             <div class="pop2" style="display:none;">
-                <div class="middle"><img src="http://maicom.md/images/maicom/ghid/ghid-simboluri.jpg" /><span class="hidden-marimi">X</span></div>
+                <div class="middle"><img src="./images/maicom/ghid/ghid-simboluri.jpg" /><span class="hidden-marimi">X</span></div>
             </div>
             <div class="pop3" style="display:none;">
-                <div class="middle"><img src="http://maicom.md/images/maicom/ghid/ghid-marimi-ru.jpg" /><span class="hidden-marimi">X</span></div>
+                <div class="middle"><img src="./images/maicom/ghid/ghid-marimi-ru.jpg" /><span class="hidden-marimi">X</span></div>
             </div>
             <div class="pop4" style="display:none;">
-                <div class="middle"><img src="http://maicom.md/images/maicom/ghid/ghid-simboluri-ru.jpg" /><span class="hidden-marimi">X</span></div>
+                <div class="middle"><img src="./images/maicom/ghid/ghid-simboluri-ru.jpg" /><span class="hidden-marimi">X</span></div>
             </div>
         </div>
     </div>

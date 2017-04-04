@@ -20,14 +20,14 @@
     height: 17px;
     display: block;
     z-index: 2;
-    right: 70px;
+    right: 74px;
     position: absolute;
     top:12px;
   }
 
   .vmCartModule  {
     position: absolute;
-    right: 69px;
+    right: 73px;
     top: 10px;
     height: 20px;
     width: 20px;
@@ -40,11 +40,12 @@
       width: 10px;
       height: 10px;
       border-radius: 10px;
-      font-size: 9px;
+      font-size: 8px;
       line-height: 12px;
       text-align: center;
       color: #fff;
       right: 2px;
+      letter-spacing: -1.2px;
     }
 
     .show_cart a {
@@ -68,7 +69,7 @@
     color: #a6a6a8;
     top: 12px;
     font-size: 16px;
-    right: 100px;
+    right: 105px;
     position: absolute;
   }
 
@@ -79,7 +80,7 @@
     width: 15px;
     height: 17px;
     z-index: 2;
-    right: 100px;
+    right: 105px;
 
     .full {
       width: 100%;
@@ -141,29 +142,6 @@
     }
   }
 
-
-
-  //h3 {
-  //  margin: 0 auto;
-  //  display: block;
-  //  color: transparent;
-  //  position: relative;
-  //  z-index: 1;
-  //  padding-top: 5px;
-  //  padding-left: 50px;
-  //
-  //  &:before {
-  //    content: "";
-  //    position: absolute;
-  //    left: 10px;
-  //    top: 7px;
-  //    width: 30px;
-  //    height: 5px;
-  //    background: #a6a6a6;
-  //    box-shadow:0 0.5em 0 0 #a6a6a6, 0 1em 0 0 #a6a6a6;
-  //  }
-  //}
-
   .fa-bars {
     color: #a6a6a6;
     position: absolute;
@@ -176,10 +154,27 @@
   i.fa.fa-heart-o {
     position: absolute;
     top: 13px;
-    right: 51px;
+    right: 54px;
     z-index: 2;
     font-size: 16px;
     color: #a6a6a8;
+
+    .whishlist-count {
+      position: absolute;
+      top: 9px;
+      z-index: 2;
+      background: red;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      font-size: 8px;
+      line-height: 12px;
+      text-align: center;
+      font-family: elektra;
+      color: #fff;
+      right: -2px;
+      letter-spacing: -1.2px;
+    }
   }
 
   ul.menu {

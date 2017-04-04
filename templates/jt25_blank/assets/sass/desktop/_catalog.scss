@@ -1,0 +1,161 @@
+.browse-view {
+
+  .product.floatleft.width25:hover a.btn.easyCompareButton {
+    color: transparent;
+  }
+  a.btn.easyCompareButton {
+    width: 26px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    color: transparent;
+    border: 1px solid #838387;
+    border-radius: 25px;
+    right: 10px;
+    top: 10px;
+    transition: 0.2s ease;
+    z-index: 2;
+
+
+    &.btn-warning.uncompare {
+      background: $primary-color !important;
+      width: 26px;
+      height: 26px;
+      display: block;
+      position: absolute;
+      color: transparent;
+      border: 1px solid $primary-color;
+      border-radius: 25px;
+      right: 10px;
+      top: 10px;
+
+      &:before {
+        color: #fff;
+        content: "\f08a";
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        font-family: fontawesome;
+        z-index: 2;
+        left: 2px;
+        top: 1px;
+        font-size: 17px;
+      }
+
+      &:hover {
+        transition: 0.2s ease;
+        background: none !important;
+        width: 26px;
+        height: 26px;
+        display: block;
+        position: absolute;
+        color: transparent !important;
+        border: 1px solid #838387;
+        border-radius: 25px;
+        right: 10px;
+        top: 10px;
+
+        &:before {
+          color: #838387;
+          content: "\f08a";
+          position: absolute;
+          display: block;
+          width: 20px;
+          height: 20px;
+          font-family: fontawesome;
+          z-index: 2;
+          left: 2px;
+          top: 1px;
+          font-size: 17px;
+        }
+      }
+    }
+
+    &:before {
+      color: #838387;
+      content: "\f08a";
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 20px;
+      font-family: fontawesome;
+      z-index: 2;
+      left: 2px;
+      top: 1px;
+      font-size: 17px;
+    }
+
+    &:hover {
+      transition: 0.2s ease;
+      width: 26px;
+      height: 26px;
+      display: block;
+      position: absolute;
+      color: transparent !important;
+      border: 1px solid $primary-color;
+      border-radius: 25px;
+      right: 10px;
+      top: 10px;
+      background: $primary-color !important;
+
+      &:before {
+        color: #fff;
+        content: "\f08a";
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        font-family: fontawesome;
+        z-index: 2;
+        left: 2px;
+        top: 1px;
+        font-size: 17px;
+      }
+    }
+  }
+
+  .orderby-displaynumber {
+    border-bottom: 0 solid #E9E8E8;
+    border-top: 0 solid #E9E8E8;
+    margin: 0;
+    padding: 2px 0;
+    position: relative;
+    right: 0;
+
+    .vm-pagination, .display-number {
+      display: none;
+    }
+
+    .orderlistcontainer:nth-child(2) {
+      display: none;
+    }
+
+    .orderlistcontainer {
+      margin-bottom: 10px;
+      .title {
+        display: block;
+        float: left;
+        width: auto;
+        margin-right: 10px;
+        background: none;
+        font-size: 12px;
+        color: #521c1c;
+      }
+
+      .activeOrder {
+        background: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 0;
+        float: left;
+        color: black;
+
+        a {
+          color: $black !important;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

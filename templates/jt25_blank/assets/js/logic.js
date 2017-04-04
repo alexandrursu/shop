@@ -3,9 +3,17 @@
 $jQ = jQuery.noConflict();
 $jQ(document).ready(function() {
     //if any elements with a class of 'category' are found
+    $jQ( ".produse-recent-vizualizate").hide();
+
     if($jQ('.productdetails-view').length){
         $jQ('.fl-mega').hide();
         $jQ('#component.smaller-container').css('width','1004px');
+        $jQ( ".produse-recent-vizualizate").show();
+
+    }
+
+    if($jQ('.browse-view').length){
+        $jQ('#breadcrumbs').hide();
     }
 
     if($jQ('.blog.blog-class').length){
@@ -1437,6 +1445,12 @@ $jQ(document).ready(function() {
         $jQ(this).children('ul').toggle( "medium", function() { });
         $jQ(this).toggleClass("super-active");
     });
+
+    var wishlist = $jQ('.modEasyCompareItem').length;
+    $jQ( ".whishlist-count").append(wishlist);
+    $jQ( "..produse-recent-vizualizate").hide();
+
+
 });
 
 

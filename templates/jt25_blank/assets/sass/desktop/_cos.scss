@@ -1,0 +1,30 @@
+.cart-view {
+  margin-top: 5px;
+  fieldset{
+    border: 1px solid #aaaaaa;
+    padding: 10px;
+  }
+
+  .billto-shipto {
+    border: 1px solid #aaaaaa;
+    padding: 10px;
+  }
+
+
+  .cart-summary {
+    .cart-images {
+      display: block;
+      float: left;
+      margin-left: 0;
+      position: relative;
+      margin-right: 20px;
+      img {
+        height: auto;
+        margin: 0;
+        padding: 0;
+        width: 125px;
+      }
+    }
+  }
+
+}

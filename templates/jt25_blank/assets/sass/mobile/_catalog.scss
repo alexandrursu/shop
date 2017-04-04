@@ -1,0 +1,159 @@
+.browse-view {
+  .product {
+    overflow: hidden;
+
+    img {
+      //width: 172px;
+      //height: 258px;
+    }
+    .image-details {
+    }
+    .price-details {
+      display: block;
+      position: relative;
+      height: 50px;
+
+      h2 {
+        float: left;
+
+        a {
+          color: #2e2e2e;
+          text-decoration: none;
+          display: block;
+          text-transform: uppercase;
+          width: 60px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+
+    }
+
+
+  }
+  .product.floatleft.width25:hover a.btn.easyCompareButton {
+    color: transparent;
+  }
+  a.btn.easyCompareButton {
+    width: 26px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    color: transparent;
+    border: 1px solid #838387;
+    border-radius: 25px;
+    right: 10px;
+    top: 10px;
+    transition: 0.2s ease;
+    z-index: 2;
+
+    &.btn-warning.uncompare {
+      background: $primary-color !important;
+      width: 26px;
+      height: 26px;
+      display: block;
+      position: absolute;
+      color: transparent;
+      border: 1px solid $primary-color;
+      border-radius: 25px;
+      right: 10px;
+      top: 10px;
+
+      &:before {
+        color: #fff;
+        content: "\f08a";
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        font-family: fontawesome;
+        z-index: 2;
+        left: 2px;
+        top: 1px;
+        font-size: 17px;
+      }
+
+      &:hover {
+        transition: 0.2s ease;
+        background: none !important;
+        width: 26px;
+        height: 26px;
+        display: block;
+        position: absolute;
+        color: transparent !important;
+        border: 1px solid #838387;
+        border-radius: 25px;
+        right: 10px;
+        top: 10px;
+
+        &:before {
+          color: #838387;
+          content: "\f08a";
+          position: absolute;
+          display: block;
+          width: 20px;
+          height: 20px;
+          font-family: fontawesome;
+          z-index: 2;
+          left: 2px;
+          top: 1px;
+          font-size: 17px;
+        }
+      }
+    }
+
+    &:before {
+      color: #838387;
+      content: "\f08a";
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 20px;
+      font-family: fontawesome;
+      z-index: 2;
+      left: 2px;
+      top: 1px;
+      font-size: 17px;
+    }
+
+    &:hover {
+      transition: 0.2s ease;
+      width: 26px;
+      height: 26px;
+      display: block;
+      position: absolute;
+      color: transparent !important;
+      border: 1px solid $primary-color;
+      border-radius: 25px;
+      right: 10px;
+      top: 10px;
+      background: $primary-color !important;
+
+      &:before {
+        color: #fff;
+        content: "\f08a";
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        font-family: fontawesome;
+        z-index: 2;
+        left: 2px;
+        top: 1px;
+        font-size: 17px;
+      }
+    }
+  }
+
+  .vm-pagination {
+    float: inherit;
+    margin-top: 10px;
+  }
+
+  .orderby-displaynumber {
+    display: none;
+  }
+}
+

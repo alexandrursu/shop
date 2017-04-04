@@ -6,6 +6,7 @@ Responsive Mobile First => Tablet => Desktop
 
 /* START Mobile */
 @media (min-width: 320px) and (max-width: 768px) {
+    @import 'mobile/product_details';
     @import 'mobile/header';
     @import 'mobile/main_slider';
     @import 'mobile/home';

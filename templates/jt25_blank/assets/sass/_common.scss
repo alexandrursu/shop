@@ -29,3 +29,269 @@
   }
 
 }
+
+.browse-view {
+  margin-top: -20px;
+  .product {
+    overflow: hidden;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+    .image-details {
+      overflow: hidden;
+      display: block;
+      position: relative;
+      width: 100%;
+
+      .supersale-label,
+      .supersale-label-stock{
+        background: red;
+        color: rgb(255, 255, 255) !important;
+        font-size: 12px !important;
+        height: 28px;
+        left: -20px;
+        margin: 0;
+        padding-left: 0;
+        position: absolute;
+        text-align: left;
+        line-height: 36px;
+        text-decoration: none;
+        text-transform: uppercase;
+        top: 1px !important;
+        transition: all 0.5s ease 0s;
+        width: 70px;
+        z-index: 1;
+        transform: rotate(-45deg);
+        font-weight: bold;
+        text-align: center;
+      }
+      .supercollection {
+        background: #ff7001;
+        color: rgb(255, 255, 255) !important;
+        font-size: 12px !important;
+        height: 28px;
+        left: -20px;
+        margin: 0;
+        padding-left: 0;
+        position: absolute;
+        text-align: left;
+        line-height: 34px;
+        text-decoration: none;
+        text-transform: uppercase;
+        top: 1px !important;
+        transition: all 0.5s ease 0s;
+        width: 70px;
+        z-index: 1;
+        transform: rotate(-45deg);
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+    .price-details {
+      display: block;
+      position: relative;
+      height: 50px;
+      .product_s_desc {
+        display: none;
+      }
+      .product-details {
+        display: none !important;
+      }
+
+      h2 {
+        float: left;
+
+        a {
+          color: #2e2e2e;
+          text-decoration: none;
+          display: block;
+          text-transform: uppercase;
+          width: 170px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .product-price {
+        float: right;
+
+        .PricesalesPrice {
+          color: $black;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+
+
+      }
+
+      .PricebasePrice {
+        display: block;
+        position: relative;
+        float: right;
+        text-align: right;
+        width: 70px;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: bold;
+      }
+
+      .PricesalesPrice {
+        color: #e4151b!important;
+        float: right;
+        font-size: 14px;
+        margin-left: 10px;
+        position: absolute;
+        font-weight: bold;
+        width: 75px;
+        text-align: right;
+        bottom: 7px;
+        right: 0;
+      }
+
+      .sku a {
+        bottom: 14px;
+        color: rgb(87, 87, 86);
+        display: block;
+        font-size: 12px;
+        left: 0;
+        position: absolute;
+        text-decoration: none;
+        width: 70px;
+      }
+    }
+  }
+
+  .vm-pagination {
+    float: right;
+    margin-top: 40px;
+  }
+}
+
+.main-image {
+  overflow: hidden;
+  .supersale-label,
+  .supersale-label-stock{
+    background: red;
+    color: rgb(255, 255, 255) !important;
+    font-size: 12px !important;
+    height: 28px;
+    left: -20px;
+    margin: 0;
+    padding-left: 0;
+    position: absolute;
+    text-align: left;
+    line-height: 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 1px !important;
+    transition: all 0.5s ease 0s;
+    width: 70px;
+    z-index: 1;
+    transform: rotate(-45deg);
+    font-weight: bold;
+    text-align: center;
+  }
+  .supercollection {
+    background: #ff7001;
+    color: rgb(255, 255, 255) !important;
+    font-size: 12px !important;
+    height: 28px;
+    left: -20px;
+    margin: 0;
+    padding-left: 0;
+    position: absolute;
+    text-align: left;
+    line-height: 34px;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 1px !important;
+    transition: all 0.5s ease 0s;
+    width: 70px;
+    z-index: 1;
+    transform: rotate(-45deg);
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+span.addinfo-socials {
+  height: 36px;
+  line-height: 36px;
+  display: block;
+  margin-top: 15px;
+  position: relative;
+
+  > span {
+    padding-top: 4px;
+    display: block;
+    float: left;
+    line-height: 24px;
+    margin-right: 8px;
+  }
+
+  .chicklets {
+    background-image: none;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    border: 1px solid #a1a1a1;
+    top: -10px;
+    display: block;
+    z-index: 2;
+    margin-right: 5px;
+
+    &.facebook {
+      &:before {
+        content: "\f09a";
+        position: absolute;
+        left: 6.2px;
+        font-size: 17px;
+        top: 4.2px;
+        color: #a1a1a1;
+        font-family: fontawesome;
+      }
+    }
+    &.vkontakte {
+      &:before {
+        content: "\f189";
+        position: absolute;
+        left: 3.2px;
+        font-size: 16px;
+        top: 2.7px;
+        color: #a1a1a1;
+        font-family: fontawesome;
+      }
+    }
+    &.odnoklassniki {
+      &:before {
+        content: "\f263";
+        position: absolute;
+        left: 6.1px;
+        font-size: 16px;
+        top: 3px;
+        color: #a1a1a1;
+        font-family: fontawesome;
+      }
+    }
+  }
+
+}
+
+/* Favorite wishlist */
+.easycompare_image {
+  img.product-image {
+    width: 100%;
+  }
+}
+
+/* Favorite wishlist */
+
+#fancybox-wrap {
+  background: #fff;
+  min-width: 300px;
+  padding:0;
+}

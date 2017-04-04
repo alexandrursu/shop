@@ -857,7 +857,7 @@ blockquote {margin:5px; padding:5px; font-size:18px; font-family: "Times New Rom
 
     display: block;
 
-    margin: 0 auto 20px;
+    margin: 0 auto;
 
     position: relative;
 
@@ -865,7 +865,6 @@ blockquote {margin:5px; padding:5px; font-size:18px; font-family: "Times New Rom
 
 }
 
-.no-breadcrumbs {display:none !important;}
 
 .fl-mega {
 
@@ -1051,10 +1050,6 @@ blockquote {margin:5px; padding:5px; font-size:18px; font-family: "Times New Rom
 
 /* Content */
 
-#content { width:1004px; margin:0 auto; position: relative; background:transparent;}
-
-#component { width:1004px; float:left;}
-
 
 
 #component.smaller-container {
@@ -1122,80 +1117,6 @@ blockquote {margin:5px; padding:5px; font-size:18px; font-family: "Times New Rom
 
 
 .productdetails-view {background:transparent; }
-
-.addtocart-button {
-
-    -moz-border-bottom-colors: none !important;
-
-    -moz-border-left-colors: none !important;
-
-    -moz-border-right-colors: none !important;
-
-    -moz-border-top-colors: none !important;
-
-    background: none repeat scroll 0 0 #e4151b;
-
-    border-color: -moz-use-text-color -moz-use-text-color rgb(159, 15, 19) !important;
-
-    border-image: none !important;
-
-    border-radius: 0;
-
-    border-style: none none solid !important;
-
-    border-width: medium medium 3px !important;
-
-    float: right !important;
-
-    height: 47px !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    width: 368px !important;
-
-	transition:0.5s ease;
-
-}
-
-
-
-.addtocart-button:hover {
-
-    -moz-border-bottom-colors: none !important;
-
-    -moz-border-left-colors: none !important;
-
-    -moz-border-right-colors: none !important;
-
-    -moz-border-top-colors: none !important;
-
-    background: none repeat scroll 0 0 #ed2c31;
-
-    border-color: -moz-use-text-color -moz-use-text-color rgb(159, 15, 19) !important;
-
-    border-image: none !important;
-
-    border-radius: 0;
-
-    border-style: none none solid !important;
-
-    border-width: medium medium 3px !important;
-
-    float: right !important;
-
-    height: 47px !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    width: 368px !important;
-
-	transition:0.5s ease;
-
-}
 
 
 
@@ -1390,7 +1311,6 @@ blockquote {margin:5px; padding:5px; font-size:18px; font-family: "Times New Rom
 
 
 
-.orderlistcontainer, .floatright.display-number {display:none;}
 
 .vm-pagination > span {display:none;}
 
@@ -1424,41 +1344,9 @@ div.marimi {
 
 
 
-.PricesalesPrice {
 
-    color: #e4151b;
-
-    float: right;
-
-    font-size: 22px;
-
-    margin-left: 10px;
-
-    font-weight: bold;
-
-}
 
 .quantity_box, .not-bold {font-size:14px;}
-
-
-
-.product-field-type-E {
-
-    top: 195px;
-
-    position: absolute;
-
-}
-
-
-
-.product-field-type-A {
-
-    top: 115px;
-
-    position: absolute;
-
-}
 
 
 
@@ -1803,15 +1691,6 @@ font-size:12px;
 
 
 
-.PricebasePrice {
-
-    float: left;
-
-    margin-left: 15px;
-
-    text-decoration: line-through;
-
-}
 
 
 
@@ -2566,39 +2445,6 @@ font-size:18px;
 
 
 
-.cart-summary .cart-images {
-
-    display: block;
-
-    float: left;
-
-    margin-left: 20px;
-
-    position: relative;
-
-    margin-right:20px;
-
-}
-
-
-
-
-
-.cart-summary .cart-images img {
-
-    box-shadow: 0 0 3px rgb(245, 245, 245);
-
-    height: 80px;
-
-    margin: 0;
-
-    padding: 0;
-
-    width: 54px;
-
-}
-
-
 
 .cart-summary tr.pdt_line {
 
@@ -2632,7 +2478,6 @@ font-size:18px;
 
 .cart-summary .final-price-tb {
 
-    background: none repeat scroll 0 0 rgb(239, 226, 202);
 
     border-right: 1px solid rgb(87, 87, 86);
 
@@ -2640,7 +2485,6 @@ font-size:18px;
 
 .cart-summary .final-price-tb2 {
 
-    background: none repeat scroll 0 0 rgb(239, 226, 202);
 
 }
 
@@ -3078,81 +2922,6 @@ h2.mr1 {display:block !important;
 
 
 
-
-
-.sku a {
-
-    bottom: 0;
-
-    color: rgb(87, 87, 86);
-
-    display: block;
-
-    font-size: 11px;
-
-    left: 10px;
-
-    position: absolute;
-
-    text-decoration: none;
-
-    width: 70px;
-
-}
-
-
-
-.browse-view .PricebasePrice {
-
-    bottom: 8px;
-
-    display: block;
-
-    position: absolute;
-
-    right: 3px;
-
-    text-align: right;
-
-    width: 70px;
-
-}
-
-
-
-.supersale-label {
-
-    background: url("../images/header-nice.png") no-repeat scroll 0 bottom rgba(0, 0, 0, 0);
-
-    color: rgb(255, 255, 255) !important;
-
-    font-size: 12px;
-
-    height: 30px;
-
-    left: -10px;
-
-    margin: 0;
-
-    padding-left: 11px;
-
-    position: absolute;
-
-    text-align: left;
-
-    text-decoration: none;
-
-    text-transform: uppercase;
-
-    top: 220px;
-
-    transition: all 0.5s ease 0s;
-
-    width: 70px;
-
-    z-index: 1;
-
-}
 
 
 

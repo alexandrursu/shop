@@ -8,6 +8,8 @@ Responsive Mobile First => Tablet => Desktop
 
 
 @media screen and (min-width: 992px) {
+  @import "desktop/cos";
+  @import "desktop/product_details";
   @import "desktop/_header";
   @import "desktop/_main_slider";
   @import "desktop/home";
