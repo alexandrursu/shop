@@ -31,7 +31,7 @@ require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 		uglify: {
 		    build: {
 		        files: {
-		            'assets/js/concat/logic.min.js': ['assets/js/logic.js']
+		            'assets/js/concat/logic.min.js': ['assets/js/logic.js', 'assets/js/bootstrap.min.js']
 		        }
 		    }
 		},

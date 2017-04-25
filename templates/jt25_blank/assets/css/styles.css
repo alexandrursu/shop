@@ -12,13 +12,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,blockquote,pre,a,abbr,
 
 html, body {
 
-    height: 100%;
-
     margin: 0;
 
     padding: 0;
-
-    overflow-x: hidden;
 
 }
 
@@ -2456,56 +2452,6 @@ font-size:18px;
 
 
 
-.billto-shipto .width100 span {
-
-    display: block;
-
-    margin: 0 auto;
-
-    padding-left: 10px;
-
-    position: relative;
-
-    text-align: left;
-
-    width: 170px;
-
-}
-
-
-
-.billto-shipto .vmicon.vm2-billto-icon {display:none;}
-
-
-
-.output-billto {
-
-    display: block;
-
-    margin: 0 auto;
-
-    width: 350px;
-
-}
-
-
-
-.cart-summary .product-field-type-E {display:none;}
-
-.marimea {display:block;}
-
-
-
-.marimea .product-field-type-E {
-
-    bottom: 0;
-
-    display: block;
-
-    position: relative;
-
-}
-
 
 
 .text-center {text-align:center;}
@@ -2516,45 +2462,8 @@ font-size:18px;
 
 
 
-.cart-summary td {
-
-    background: none repeat scroll 0 0 rgb(255, 255, 255);
-
-    padding-bottom: 20px;
-
-    padding-top: 20px !important;
-
-}
 
 
-
-.cart-summary td a.pdt_name {
-
-    color: rgb(87, 87, 86);
-
-    display: block;
-
-    font-size: 16px;
-
-    line-height: 60px;
-
-    margin-left: 55px;
-
-    text-decoration: none;
-
-}
-
-
-
-
-
-
-
-.cart-summary tr.pdt_line {
-
-    border-bottom: 1px solid #575756;
-
-}
 
 
 
@@ -2607,13 +2516,7 @@ font-size:18px;
 
 
 
-.cart-summary td.final-price-tb2  {
 
-    padding: 10px 0 5px !important;
-
-    text-align: center;
-
-}
 
 
 

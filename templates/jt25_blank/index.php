@@ -51,7 +51,16 @@ endif; ?>
                 	<div class="row row-no-padding">
                 	    <div class="col-md-12 hidden-xs hidden-sm">
                             <ul class="menu-header">
-                                 <li>Bine ai venit!</li>
+                                 <li>
+                                     <?php $lang =& JFactory::getLanguage();
+                                     if($lang->getTag() == 'ru-RU'): ?>
+                                        Здравствуй!
+                                     <?php elseif($lang->getTag() == 'ro-RO'): ?>
+                                        Hello!
+                                     <?php else: ?>
+                                        Bine ai venit!
+                                     <?php endif; ?>
+                                 </li>
                                  <li>
                                      <?php $lang =& JFactory::getLanguage();
                                      if($lang->getTag() == 'ru-RU'): ?>
@@ -349,6 +358,6 @@ endif; ?>
 <script type="text/javascript">stLight.options({publisher: "6c6baa79-ab3c-4c4a-a251-848263020e6c", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52fd654b2da5feb4" async="async"></script>
-
+<span id="return-to-top"><i class="fa fa-arrow-up"></i></span>
 </body>
 </html>

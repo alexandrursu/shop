@@ -1,7 +1,9 @@
 .productdetails-view {
   position: relative;
   padding-bottom: 30px;
-
+  .product-related-products {
+    display: none;
+  }
   .spacer-buy-area {
     padding: 0 0 0 0px;
     border-top: 1px solid;

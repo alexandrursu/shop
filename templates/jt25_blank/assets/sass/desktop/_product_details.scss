@@ -1,6 +1,8 @@
 .productdetails-view {
   position: relative;
-
+  .product-related-products {
+    display: none;
+  }
   .spacer-buy-area {
     padding: 0 0 0 0px;
     border-top: 1px solid;
@@ -393,7 +395,9 @@
 }
 
 .moduletable.produse-recent-vizualizate {
+  height: 320px;
   position: relative;
+  overflow: hidden;
 
   &:before {
     width: 100%;
