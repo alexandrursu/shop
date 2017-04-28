@@ -1069,7 +1069,7 @@ blockquote {margin:5px; padding:5px; font-size:18px; font-family: "Times New Rom
 
     padding: 0;
 
-    color:#e4151b;
+    color:#e4151b !important;
 
 }
 
@@ -3014,6 +3014,29 @@ h2.mr1 {display:block !important;
 
 
 
+.pop1 {
+
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+
+    font-family: 'News Cycle',sans-serif;
+
+    height: 100%;
+
+    left: 0;
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 10001;
+
+    overflow:scroll;
+
+    text-align:center;
+
+}
 
 
 

@@ -166,7 +166,7 @@
       clear: both;
     }
 
-    .vmpayment_description, .vmshipment_description {
+    .vmpayment_description, .vmshipment_description, .vmshipment_cost {
       font-size: 9px;
     }
 
@@ -254,7 +254,7 @@
   background: none;
   height: 30px;
   margin-bottom: 10px;
-  padding-left: 100px;
+  padding-left: 120px;
   border: 1px solid $black;
   border-radius: 0;
 }
@@ -295,7 +295,6 @@ table.adminForm.user-details {
 }
 
 #system-message {
-  > .info {
-    display: none;
+  > dt.info {
   }
 }

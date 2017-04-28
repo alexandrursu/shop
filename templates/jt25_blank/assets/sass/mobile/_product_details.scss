@@ -16,6 +16,7 @@
       position: absolute;
       right: 0;
       top: 16px;
+      display: none;
     }
 
     .simboluri-ro {
@@ -128,6 +129,28 @@
     text-align: center;
     text-align: -webkit-center;;
 
+    ul.bullets {
+      position: absolute;
+      bottom: 10px;
+      margin: 0 auto;
+      width: 40px;
+      text-align: center;
+      left: 45%;
+
+      li {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: rgba(254,254,254,0.5);
+        display: inline-block;
+        border-radius: 10px;
+
+        &.active {
+          background: #fff;
+        }
+      }
+    }
+
     .additional-images {
       height: 10px;
       position: absolute;
@@ -166,6 +189,7 @@
 
     .main-arrow {
       &.arrow-up-product {
+        display: block !important;
         border: 0 solid #e7e7e7;
         cursor: pointer;
         display: block;
@@ -188,6 +212,7 @@
       }
 
       &.arrow-down-product {
+        display: block !important;
         border: 0 solid #e7e7e7;
         cursor: pointer;
         display: block;
@@ -262,6 +287,7 @@
 
   label.quantity_box {
     float: left;
+    width: 70px;
   }
 
   span.quantity-controls input.quantity-plus {

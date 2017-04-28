@@ -64,11 +64,11 @@ endif; ?>
                                  <li>
                                      <?php $lang =& JFactory::getLanguage();
                                      if($lang->getTag() == 'ru-RU'): ?>
-                                        <a href="./ru/kontakt-maicom">Контакты </a>
+                                        <a href="index.php?option=com_content&view=article&id=6&Itemid=210">Контакты </a>
                                      <?php elseif($lang->getTag() == 'ro-RO'): ?>
-                                        <a href="./ro/our-contacts">Contacts </a>
+                                        <a href="index.php?option=com_content&view=article&id=6&Itemid=210">Contacts </a>
                                      <?php else: ?>
-                                        <a href="./rom/contacte">Contact </a>
+                                        <a href="index.php?option=com_content&view=article&id=6&Itemid=210">Contact </a>
                                      <?php endif; ?>
                                  </li>
                                  <li class="cosul-desktop">
@@ -219,10 +219,10 @@ endif; ?>
             <?php endif; ?>
             <div id="content" <?php if ($this->countModules( 'magazin' )){ echo 'class="smaller-container"'; }  ?>>
                 <div id="component" <?php if ($this->countModules( 'sidebar' )){ echo 'class="smaller-container"'; }  ?>>
-                    <?php if ($this->countModules('content-maps')) : ?><jdoc:include type="modules" name="content-maps" style="xhtml" /><?php endif; ?>
                     <?php if ($this->countModules('right-sidebar')) : ?><div class="right-sidebars"><jdoc:include type="modules" name="right-sidebar" style="xhtml" /></div><?php endif; ?>
                     <div class="container">
                         <jdoc:include type="message" />
+                        <?php if ($this->countModules('content-maps')) : ?><jdoc:include type="modules" name="content-maps" style="xhtml" /><?php endif; ?>
                     </div>
                     <jdoc:include type="component" />
                 </div>
@@ -242,8 +242,17 @@ endif; ?>
             </div>
 
 
-            <div class="pop1" style="display:none;">
+            <div class="pop1 pop-dame" style="display:none;">
                 <div class="middle"><img src="./images/maicom/ghid/ghid-marimi.jpg" /><span class="hidden-marimi">X</span></div>
+            </div>
+            <div class="pop1 pop-barbati" style="display:none;">
+                <div class="middle"><img src="./images/maicom/ghid/ghid-marimi-barbati.jpg" /><span class="hidden-marimi">X</span></div>
+            </div>
+            <div class="pop1 pop-copii" style="display:none;">
+                <div class="middle"><img src="./images/maicom/ghid/ghid-marimi-copii.jpg" /><span class="hidden-marimi">X</span></div>
+            </div>
+            <div class="pop1 pop-ado" style="display:none;">
+                <div class="middle"><img src="./images/maicom/ghid/ghid-marimi-ado.jpg" /><span class="hidden-marimi">X</span></div>
             </div>
             <div class="pop2" style="display:none;">
                 <div class="middle"><img src="./images/maicom/ghid/ghid-simboluri.jpg" /><span class="hidden-marimi">X</span></div>

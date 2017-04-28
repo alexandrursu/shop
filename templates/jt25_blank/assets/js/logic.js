@@ -1367,10 +1367,18 @@ $jQ(document).ready(function() {
         $jQ("#dialog-links-blocks").hide();
     });
 
-    $jQ(".marimi-ro").click(function () {
+    $jQ(".marimi-dame").click(function () {
+        $jQ(".pop-dame").show();
+    });
 
-        $jQ(".pop1").show();
-
+    $jQ(".marimi-copii").click(function () {
+        $jQ(".pop-copii").show();
+    });
+    $jQ(".marimi-barbati").click(function () {
+        $jQ(".pop-barbati").show();
+    });
+    $jQ(".marimi-ado").click(function () {
+        $jQ(".pop-ado").show();
     });
     $jQ(".simboluri-ro").click(function () {
 

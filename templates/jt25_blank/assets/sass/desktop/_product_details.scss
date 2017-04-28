@@ -125,6 +125,10 @@
     overflow: hidden;
     margin-bottom: 60px;
 
+    ul.bullets {
+      display: none;
+    }
+
     .additional-images {
       height: 10px;
       position: absolute;
@@ -257,6 +261,7 @@
 
   label.quantity_box {
     float: left;
+    width: 70px;
   }
 
   span.quantity-controls input.quantity-plus {

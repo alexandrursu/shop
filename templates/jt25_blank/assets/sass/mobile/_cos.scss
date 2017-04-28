@@ -4,6 +4,18 @@
     border: 1px solid #aaaaaa;
     padding: 10px;
 
+    .see-wishlist {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .continue {
+      width: 100%;
+      text-align: center;
+
+    }
+
     .cart-images {
       display: block;
       float: left;
@@ -166,7 +178,7 @@
       clear: both;
     }
 
-    .vmpayment_description, .vmshipment_description {
+    .vmpayment_description, .vmshipment_description, .vmshipment_cost {
       font-size: 9px;
     }
 
@@ -295,7 +307,7 @@ table.adminForm.user-details {
 }
 
 #system-message {
-  > .info {
+  > dt.info {
     display: none;
   }
 }
