@@ -108,9 +108,9 @@ if(!empty($boxFuncAsk) or !empty($boxFuncReco)){
 
 
 ?>
-
+<div class="container">
+<div class="row">
 <div class="productdetails-view productdetails <?php echo $this->product->virtuemart_category_id ?> <?php echo $this->product->category_name ?>">
-
     <?php
     // Product Navigation
     if (VmConfig::get('product_navigation', 1)) {
@@ -177,175 +177,170 @@ if(!empty($boxFuncAsk) or !empty($boxFuncReco)){
  
 
     <div>
-	<div class="width60 floatleft">
+	<div class="col-md-7 col-xs-12">
 <?php
 echo $this->loadTemplate('images');
 ?>
 	</div>
 
-	<div class="width40 floatright">
+	<div class="col-md-5 col-xs-12 pl-44">
 	    <?php // Product Title   ?>
-    <h1><?php echo $this->product->product_name ?></h1>
-<div class="sku-title">
-<?php echo 'model: '?><?php echo $this->product->product_sku ?>
-</div>
-    <?php // Product Title END   ?>
-	   <?php
-    // Product Short Description
-    if (!empty($this->product->product_s_desc)) {
-	?>
-        <div class="product-short-description">
-<?php
-$lang =& JFactory::getLanguage();
-if($lang->getTag() == 'en-GB'): ?>
-<div><b>Descriere produs:</b></div>
-<?php elseif($lang->getTag() == 'ro-RO'): ?>
-<div><b>Descrption:</b></div>
-<?php else: ?>
-<div><b>Описание</b></div>
-<?php endif; ?>
-
-	    <?php
-	    /** @todo Test if content plugins modify the product description */
-	    echo nl2br($this->product->product_s_desc);
-	    ?>
+	    <div class="title-block">
+	        <h1><?php echo $this->product->product_name ?></h1>
+            <div class="sku-title">
+                <?php echo $this->product->product_sku ?>
+            </div>
+	    </div>
+        <div class="prices-block">
+            <?php  echo $this->loadTemplate('showprices'); ?>
         </div>
-	
-	<?php
-    } // Product Short Description END
+        <div class="clear"></div>
+    <?php // Product Title END   ?>
 
-
-    if (!empty($this->product->customfieldsSorted['ontop'])) {
-	$this->position = 'ontop';
-	echo $this->loadTemplate('customfields');
-    } // Product Custom ontop end
-    ?>
-<?php
-$lang =& JFactory::getLanguage();
-if($lang->getTag() == 'en-GB'): ?>
-<span class="addinfo">
-<a class="fl marimi-ro" data-lightbox="on" href="javascript:void(0)">Ghid mărimi</a>
-<a class="fr simboluri-ro simboluri" data-lightbox="on" href="javascript:void(0)">Ghid simboluri</a>
-</span>
-<?php elseif($lang->getTag() == 'ro-RO'): ?>
-<span class="addinfo">
-<a class="fl marimi-ru" data-lightbox="on" href="javascript:void(0)">Size table</a>
-<a class="fr simboluri-ru simboluri" data-lightbox="on" href="javascript:void(0)">The symbol table</a>
-</span>
-<?php else: ?>
-<span class="addinfo">
-<a class="fl marimi-ru" data-lightbox="on" href="javascript:void(0)">Таблица размеров</a>
-<a class="fr simboluri-ru simboluri" data-lightbox="on" href="javascript:void(0)">Таблица символов</a>
-</span>
-<?php endif; ?>
 
 	    <div class="spacer-buy-area">
+            <?php
+                $lang =& JFactory::getLanguage();
+                if($lang->getTag() == 'en-GB'): ?>
+                <span class="addinfo">
+                <a class="fl
+                <?php if(in_array(6,$this->product->categories)){echo 'marimi-dame'; }  ?>
+                <?php if(in_array(37,$this->product->categories)){echo 'marimi-copii'; }  ?>
+                <?php if(in_array(24,$this->product->categories)){echo 'marimi-barbati'; }  ?>
+                <?php if(in_array(38,$this->product->categories)){echo 'marimi-ado'; }  ?>
+                marimi-ro" data-lightbox="on" href="javascript:void(0)">Ghid mărimi</a>
+                <!--<a class="fr simboluri-ro simboluri" data-lightbox="on" href="javascript:void(0)">Ghid simboluri</a>-->
+                </span>
+                <?php elseif($lang->getTag() == 'ro-RO'): ?>
+                <span class="addinfo">
+                <a class="fl
+                <?php if(in_array(6,$this->product->categories)){echo 'marimi-dame'; }  ?>
+                <?php if(in_array(37,$this->product->categories)){echo 'marimi-copii'; }  ?>
+                <?php if(in_array(24,$this->product->categories)){echo 'marimi-barbati'; }  ?>
+                <?php if(in_array(38,$this->product->categories)){echo 'marimi-ado'; }  ?>
+                marimi-ro" data-lightbox="on" href="javascript:void(0)">Size table</a>
+                <!--<a class="fr simboluri-ro simboluri" data-lightbox="on" href="javascript:void(0)">The symbol table</a>-->
+                </span>
+                <?php else: ?>
+                <span class="addinfo">
+                <a class="fl
+                <?php if(in_array(6,$this->product->categories)){echo 'marimi-dame'; }  ?>
+                <?php if(in_array(37,$this->product->categories)){echo 'marimi-copii'; }  ?>
+                <?php if(in_array(24,$this->product->categories)){echo 'marimi-barbati'; }  ?>
+                <?php if(in_array(38,$this->product->categories)){echo 'marimi-ado'; }  ?>
 
+                marimi-ro" data-lightbox="on" href="javascript:void(0)">Таблица размеров</a>
+                <!--<a class="fr simboluri-ro simboluri" data-lightbox="on" href="javascript:void(0)">Таблица символов</a>-->
+                </span>
+            <?php endif; ?>
+            <?php
+            // TODO in Multi-Vendor not needed at the moment and just would lead to confusion
+            /* $link = JRoute::_('index2.php?option=com_virtuemart&view=virtuemart&task=vendorinfo&virtuemart_vendor_id='.$this->product->virtuemart_vendor_id);
+              $text = JText::_('COM_VIRTUEMART_VENDOR_FORM_INFO_LBL');
+              echo '<span class="bold">'. JText::_('COM_VIRTUEMART_PRODUCT_DETAILS_VENDOR_LBL'). '</span>'; ?><a class="modal" href="<?php echo $link ?>"><?php echo $text ?></a><br />
+             */
+            ?>
 
-		<?php
-		// TODO in Multi-Vendor not needed at the moment and just would lead to confusion
-		/* $link = JRoute::_('index2.php?option=com_virtuemart&view=virtuemart&task=vendorinfo&virtuemart_vendor_id='.$this->product->virtuemart_vendor_id);
-		  $text = JText::_('COM_VIRTUEMART_VENDOR_FORM_INFO_LBL');
-		  echo '<span class="bold">'. JText::_('COM_VIRTUEMART_PRODUCT_DETAILS_VENDOR_LBL'). '</span>'; ?><a class="modal" href="<?php echo $link ?>"><?php echo $text ?></a><br />
-		 */
-		?>
+            <?php
+            if ($this->showRating) {
+                $maxrating = VmConfig::get('vm_maximum_rating_scale', 5);
 
-		<?php
-		if ($this->showRating) {
-		    $maxrating = VmConfig::get('vm_maximum_rating_scale', 5);
+                if (empty($this->rating)) {
+                ?>
+                <span class="vote"><?php echo JText::_('COM_VIRTUEMART_RATING') . ' ' . JText::_('COM_VIRTUEMART_UNRATED') ?></span>
+                    <?php
+                } else {
+                    $ratingwidth = $this->rating->rating * 24; //I don't use round as percetntage with works perfect, as for me
+                    ?>
+                <span class="vote">
+            <?php echo JText::_('COM_VIRTUEMART_RATING') . ' ' . round($this->rating->rating) . '/' . $maxrating; ?><br/>
+                    <span title=" <?php echo (JText::_("COM_VIRTUEMART_RATING_TITLE") . round($this->rating->rating) . '/' . $maxrating) ?>" class="ratingbox" style="display:inline-block;">
+                    <span class="stars-orange" style="width:<?php echo $ratingwidth.'px'; ?>">
+                    </span>
+                    </span>
+                </span>
+                <?php
+                }
+            }
+            if (is_array($this->productDisplayShipments)) {
+                foreach ($this->productDisplayShipments as $productDisplayShipment) {
+                echo $productDisplayShipment . '<br />';
+                }
+            }
+            if (is_array($this->productDisplayPayments)) {
+                foreach ($this->productDisplayPayments as $productDisplayPayment) {
+                echo $productDisplayPayment . '<br />';
+                }
+            }
+            // Product Price
+                // the test is done in show_prices
+            //if ($this->show_prices and (empty($this->product->images[0]) or $this->product->images[0]->file_is_downloadable == 0)) {
+            //}
+            ?>
 
-		    if (empty($this->rating)) {
-			?>
-			<span class="vote"><?php echo JText::_('COM_VIRTUEMART_RATING') . ' ' . JText::_('COM_VIRTUEMART_UNRATED') ?></span>
-			    <?php
-			} else {
-			    $ratingwidth = $this->rating->rating * 24; //I don't use round as percetntage with works perfect, as for me
-			    ?>
-			<span class="vote">
-	<?php echo JText::_('COM_VIRTUEMART_RATING') . ' ' . round($this->rating->rating) . '/' . $maxrating; ?><br/>
-			    <span title=" <?php echo (JText::_("COM_VIRTUEMART_RATING_TITLE") . round($this->rating->rating) . '/' . $maxrating) ?>" class="ratingbox" style="display:inline-block;">
-				<span class="stars-orange" style="width:<?php echo $ratingwidth.'px'; ?>">
-				</span>
-			    </span>
-			</span>
-			<?php
-		    }
-		}
-		if (is_array($this->productDisplayShipments)) {
-		    foreach ($this->productDisplayShipments as $productDisplayShipment) {
-			echo $productDisplayShipment . '<br />';
-		    }
-		}
-		if (is_array($this->productDisplayPayments)) {
-		    foreach ($this->productDisplayPayments as $productDisplayPayment) {
-			echo $productDisplayPayment . '<br />';
-		    }
-		}
-		// Product Price
-		    // the test is done in show_prices
-		//if ($this->show_prices and (empty($this->product->images[0]) or $this->product->images[0]->file_is_downloadable == 0)) {
-		    echo $this->loadTemplate('showprices');
-		//}
-		?>
+            <?php
+            // Add To Cart Button
+    // 			if (!empty($this->product->prices) and !empty($this->product->images[0]) and $this->product->images[0]->file_is_downloadable==0 ) {
+    //		if (!VmConfig::get('use_as_catalog', 0) and !empty($this->product->prices['salesPrice'])) {
+                echo $this->loadTemplate('addtocart');
+    //		}  // Add To Cart Button END
+            ?>
 
-		<?php
-		// Add To Cart Button
-// 			if (!empty($this->product->prices) and !empty($this->product->images[0]) and $this->product->images[0]->file_is_downloadable==0 ) {
-//		if (!VmConfig::get('use_as_catalog', 0) and !empty($this->product->prices['salesPrice'])) {
-		    echo $this->loadTemplate('addtocart');
-//		}  // Add To Cart Button END
-		?>
+            <?php
+            // Availability
+            $stockhandle = VmConfig::get('stockhandle', 'none');
+            $product_available_date = substr($this->product->product_available_date,0,10);
+            $current_date = date("Y-m-d");
+            if (($this->product->product_in_stock - $this->product->product_ordered) < 1) {
+                if ($product_available_date != '0000-00-00' and $current_date < $product_available_date) {
+                ?>	<div class="availability">
+                        <?php echo JText::_('COM_VIRTUEMART_PRODUCT_AVAILABLE_DATE') .': '. JHTML::_('date', $this->product->product_available_date, JText::_('DATE_FORMAT_LC4')); ?>
+                    </div>
+                <?php
+                } else if ($stockhandle == 'risetime' and VmConfig::get('rised_availability') and empty($this->product->product_availability)) {
+                ?>	<div class="availability">
+                    <?php echo (file_exists(JPATH_BASE . DS . VmConfig::get('assets_general_path') . 'images/availability/' . VmConfig::get('rised_availability'))) ? JHTML::image(JURI::root() . VmConfig::get('assets_general_path') . 'images/availability/' . VmConfig::get('rised_availability', '7d.gif'), VmConfig::get('rised_availability', '7d.gif'), array('class' => 'availability')) : JText::_(VmConfig::get('rised_availability')); ?>
+                </div>
+                <?php
+                } else if (!empty($this->product->product_availability)) {
+                ?>
+                <div class="availability">
+                <?php echo (file_exists(JPATH_BASE . DS . VmConfig::get('assets_general_path') . 'images/availability/' . $this->product->product_availability)) ? JHTML::image(JURI::root() . VmConfig::get('assets_general_path') . 'images/availability/' . $this->product->product_availability, $this->product->product_availability, array('class' => 'availability')) : JText::_($this->product->product_availability); ?>
+                </div>
+                <?php
+                }
+            }
+            else if ($product_available_date != '0000-00-00' and $current_date < $product_available_date) {
+            ?>	<div class="availability">
+                    <?php echo JText::_('COM_VIRTUEMART_PRODUCT_AVAILABLE_DATE') .': '. JHTML::_('date', $this->product->product_available_date, JText::_('DATE_FORMAT_LC4')); ?>
+                </div>
+            <?php
+            }
+            ?>
 
-		<?php
-		// Availability
-		$stockhandle = VmConfig::get('stockhandle', 'none');
-		$product_available_date = substr($this->product->product_available_date,0,10);
-		$current_date = date("Y-m-d");
-		if (($this->product->product_in_stock - $this->product->product_ordered) < 1) {
-			if ($product_available_date != '0000-00-00' and $current_date < $product_available_date) {
-			?>	<div class="availability">
-					<?php echo JText::_('COM_VIRTUEMART_PRODUCT_AVAILABLE_DATE') .': '. JHTML::_('date', $this->product->product_available_date, JText::_('DATE_FORMAT_LC4')); ?>
-				</div>
-		    <?php
-			} else if ($stockhandle == 'risetime' and VmConfig::get('rised_availability') and empty($this->product->product_availability)) {
-			?>	<div class="availability">
-			    <?php echo (file_exists(JPATH_BASE . DS . VmConfig::get('assets_general_path') . 'images/availability/' . VmConfig::get('rised_availability'))) ? JHTML::image(JURI::root() . VmConfig::get('assets_general_path') . 'images/availability/' . VmConfig::get('rised_availability', '7d.gif'), VmConfig::get('rised_availability', '7d.gif'), array('class' => 'availability')) : JText::_(VmConfig::get('rised_availability')); ?>
-			</div>
-		    <?php
-			} else if (!empty($this->product->product_availability)) {
-			?>
-			<div class="availability">
-			<?php echo (file_exists(JPATH_BASE . DS . VmConfig::get('assets_general_path') . 'images/availability/' . $this->product->product_availability)) ? JHTML::image(JURI::root() . VmConfig::get('assets_general_path') . 'images/availability/' . $this->product->product_availability, $this->product->product_availability, array('class' => 'availability')) : JText::_($this->product->product_availability); ?>
-			</div>
-			<?php
-			}
-		}
-		else if ($product_available_date != '0000-00-00' and $current_date < $product_available_date) {
-		?>	<div class="availability">
-				<?php echo JText::_('COM_VIRTUEMART_PRODUCT_AVAILABLE_DATE') .': '. JHTML::_('date', $this->product->product_available_date, JText::_('DATE_FORMAT_LC4')); ?>
-			</div>
-		<?php
-		}
-		?>
+            <?php
+            // Ask a question about this product
+            if (VmConfig::get('ask_question', 0) == 1) {
+            ?>
+                <div class="ask-a-question">
+                    <a class="ask-a-question" href="<?php echo $this->askquestion_url ?>" rel="nofollow" ><?php echo JText::_('COM_VIRTUEMART_PRODUCT_ENQUIRY_LBL') ?></a>
+                    <!--<a class="ask-a-question modal" rel="{handler: 'iframe', size: {x: 700, y: 550}}" href="<?php echo $this->askquestion_url ?>"><?php echo JText::_('COM_VIRTUEMART_PRODUCT_ENQUIRY_LBL') ?></a>-->
+                </div>
+            <?php }
+            ?>
 
-<?php
-// Ask a question about this product
-if (VmConfig::get('ask_question', 0) == 1) {
-    ?>
-    		<div class="ask-a-question">
-    		    <a class="ask-a-question" href="<?php echo $this->askquestion_url ?>" rel="nofollow" ><?php echo JText::_('COM_VIRTUEMART_PRODUCT_ENQUIRY_LBL') ?></a>
-    		    <!--<a class="ask-a-question modal" rel="{handler: 'iframe', size: {x: 700, y: 550}}" href="<?php echo $this->askquestion_url ?>"><?php echo JText::_('COM_VIRTUEMART_PRODUCT_ENQUIRY_LBL') ?></a>-->
-    		</div>
-		<?php }
-		?>
-
-		<?php
-		// Manufacturer of the Product
-		if (VmConfig::get('show_manufacturers', 1) && !empty($this->product->virtuemart_manufacturer_id)) {
-		    echo $this->loadTemplate('manufacturer');
-		}
-		?>
-
+            <?php
+            // Manufacturer of the Product
+            if (VmConfig::get('show_manufacturers', 1) && !empty($this->product->virtuemart_manufacturer_id)) {
+                echo $this->loadTemplate('manufacturer');
+            }
+            ?>
+            <span class="addinfo-socials">
+                  <span>Share:</span>
+                  <span class='st_facebook'></span>
+                  <span class='st_vkontakte'></span>
+                  <span class='st_odnoklassniki'></span>
+            </span>
 	    </div>
 	</div>
 	<div class="clear"></div>
@@ -417,4 +412,7 @@ echo $this->product->event->afterDisplayContent; ?>
 <?php
 echo $this->loadTemplate('reviews');
 ?>
+
+</div>
+</div>
 </div>

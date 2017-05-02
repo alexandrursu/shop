@@ -33,6 +33,8 @@ JHtml::addIncludePath(JPATH_COMPONENT.'/helpers');
 
 <?php if ($this->params->get('show_description', 1) || $this->params->def('show_description_image', 1)) : ?>
 	<div class="category-desc">
+	<div class="container">
+
 	<?php if ($this->params->get('show_description_image') && $this->category->getParams()->get('image')) : ?>
 		<img src="<?php echo $this->category->getParams()->get('image'); ?>"/>
 	<?php endif; ?>
@@ -40,6 +42,7 @@ JHtml::addIncludePath(JPATH_COMPONENT.'/helpers');
 		<?php echo JHtml::_('content.prepare', $this->category->description, '', 'com_content.category'); ?>
 	<?php endif; ?>
 	<div class="clr"></div>
+	</div>
 	</div>
 <?php endif; ?>
 
@@ -78,6 +81,8 @@ JHtml::addIncludePath(JPATH_COMPONENT.'/helpers');
 		$row = $counter / $this->columns ;
 
 		if ($rowcount==1) : ?>
+	<div class="container">
+
 	<div class="items-row cols-<?php echo (int) $this->columns;?> <?php echo 'row-'.$row ; ?>">
 	<?php endif; ?>
 	<div class="item column-<?php echo $rowcount;?><?php echo $item->state == 0 ? ' system-unpublished' : null; ?>">
@@ -89,6 +94,7 @@ JHtml::addIncludePath(JPATH_COMPONENT.'/helpers');
 	<?php $counter++; ?>
 	<?php if (($rowcount == $this->columns) or ($counter ==$introcount)): ?>
 				<span class="row-separator"></span>
+				</div>
 				</div>
 
 			<?php endif; ?>
@@ -116,6 +122,7 @@ JHtml::addIncludePath(JPATH_COMPONENT.'/helpers');
 	<?php endif; ?>
 
 <?php if (($this->params->def('show_pagination', 1) == 1  || ($this->params->get('show_pagination') == 2)) && ($this->pagination->get('pages.total') > 1)) : ?>
+		<div class="container">
 		<div class="pagination">
 						<?php  if ($this->params->def('show_pagination_results', 1)) : ?>
 						<p class="counter">
@@ -124,6 +131,7 @@ JHtml::addIncludePath(JPATH_COMPONENT.'/helpers');
 
 				<?php endif; ?>
 				<?php echo $this->pagination->getPagesLinks(); ?>
+		</div>
 		</div>
 <?php  endif; ?>
 

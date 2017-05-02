@@ -21,7 +21,6 @@
 defined ( '_JEXEC' ) or die ( 'Restricted access' );
 ?>
         <div class="product-related-products">
-    	<h4><?php echo JText::_('COM_VIRTUEMART_RELATED_PRODUCTS'); ?></h4>
 
     <?php
     foreach ($this->product->customfieldsRelatedProducts as $field) {

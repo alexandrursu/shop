@@ -18,7 +18,6 @@
 // Check to ensure this file is included in Joomla!
 defined ('_JEXEC') or die('Restricted access');
 ?>
-<i class="fa fa-tag"></i>
 <div class="product-price" id="productPrice<?php echo $this->product->virtuemart_product_id ?>">
 	<?php
 	if (!empty($this->product->prices['salesPrice'])) {
@@ -44,14 +43,7 @@ defined ('_JEXEC') or die('Restricted access');
 	if (round($this->product->prices['salesPriceWithDiscount'],$this->currency->_priceConfig['salesPrice'][1]) != $this->product->prices['salesPrice']) {
 		echo $this->currency->createPriceDiv ('salesPriceWithDiscount', 'COM_VIRTUEMART_PRODUCT_SALESPRICE_WITH_DISCOUNT ', $this->product->prices);
 	}
-	echo $this->currency->createPriceDiv ('salesPrice', 'COM_VIRTUEMART_PRODUCT_SALESPRICE', $this->product->prices);
-	if ($this->product->prices['discountedPriceWithoutTax'] != $this->product->prices['priceWithoutTax']) {
-		echo $this->currency->createPriceDiv ('discountedPriceWithoutTax', 'COM_VIRTUEMART_PRODUCT_SALESPRICE_WITHOUT_TAX', $this->product->prices);
-	} else {
-		echo $this->currency->createPriceDiv ('priceWithoutTax', 'COM_VIRTUEMART_PRODUCT_SALESPRICE_WITHOUT_TAX', $this->product->prices);
 
-	}
-	echo $this->currency->createPriceDiv ('discountAmount', 'COM_VIRTUEMART_PRODUCT_DISCOUNT_AMOUNT', $this->product->prices);
 
   
 
@@ -62,7 +54,14 @@ defined ('_JEXEC') or die('Restricted access');
        }
 
 
+	echo $this->currency->createPriceDiv ('salesPrice', 'COM_VIRTUEMART_PRODUCT_SALESPRICE', $this->product->prices);
+	if ($this->product->prices['discountedPriceWithoutTax'] != $this->product->prices['priceWithoutTax']) {
+		echo $this->currency->createPriceDiv ('discountedPriceWithoutTax', 'COM_VIRTUEMART_PRODUCT_SALESPRICE_WITHOUT_TAX', $this->product->prices);
+	} else {
+		echo $this->currency->createPriceDiv ('priceWithoutTax', 'COM_VIRTUEMART_PRODUCT_SALESPRICE_WITHOUT_TAX', $this->product->prices);
 
+	}
+	echo $this->currency->createPriceDiv ('discountAmount', 'COM_VIRTUEMART_PRODUCT_DISCOUNT_AMOUNT', $this->product->prices);
 	
 echo $this->currency->createPriceDiv ('taxAmount', 'COM_VIRTUEMART_PRODUCT_TAX_AMOUNT', $this->product->prices);
 	$unitPriceDescription = JText::sprintf ('COM_VIRTUEMART_PRODUCT_UNITPRICE', JText::_('COM_VIRTUEMART_UNIT_SYMBOL_'.$this->product->product_unit));
@@ -71,38 +70,3 @@ echo $this->currency->createPriceDiv ('taxAmount', 'COM_VIRTUEMART_PRODUCT_TAX_A
 	?>
 
 </div>
-<?php
-$lang =& JFactory::getLanguage();
-if($lang->getTag() == 'en-GB'): ?>
-<span class="addinfo-socials">
-
-<span>Spune prietenilor</span>
-<!--<span class='st_facebook' ></span>
-<span class='st_vkontakte'></span>
-<span class='st_odnoklassniki'></span>-->
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<div class="addthis_sharing_toolbox"></div>
-</span>
-<?php elseif($lang->getTag() == 'ro-RO'): ?>
-
-<span class="addinfo-socials">
-
-<span>Share item</span>
-<span class='st_facebook'></span>
-<span class='st_vkontakte'></span>
-<span class='st_odnoklassniki'></span>
-
-</span>
-
-<?php else: ?>
-
-<span class="addinfo-socials">
-
-<span>Share item</span>
-<span class='st_facebook'></span>
-<span class='st_vkontakte'></span>
-<span class='st_odnoklassniki'></span>
-
-</span>
-
-<?php endif; ?>

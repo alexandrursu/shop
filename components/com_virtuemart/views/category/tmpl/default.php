@@ -138,6 +138,7 @@ if (VmConfig::get ('showCategory', 1) and empty($this->keyword)) {
 }
 ?>
 <div class="browse-view">
+<div class="container">
 <?php
 
 if (!empty($this->keyword)) {
@@ -226,19 +227,54 @@ if (!empty($this->products)) {
 
 		// Show Products
 		?>
-		<div class="product floatleft<?php echo $Browsecellwidth . $show_vertical_separator ?>">
-
+		<div class="product floatleft col-md-3 col-xs-6">
+        {easycompare <?php echo $product->virtuemart_product_id ?>}
 
 			
          <div class="spacer">
 
 
 
-				<div class="width30 floatleft center">
+				<div class="image-details">
 
 				    <a title="<?php echo $product->product_name ?>" rel="vm-additional-images" href="<?php echo $product->link; ?>">
 						<?php
 							echo $product->images[0]->displayMediaThumb('class="browseProductImage"', false);
+
+                            if(in_array(63,$product->categories)){
+								if($lang->getTag() == 'ru-RU') {
+									echo '<span class="supersale-label">Sale</span>';
+								}
+								elseif ($lang->getTag() == 'en-GB') {
+									echo '<span class="supersale-label">Sale</span>';
+								}
+								else{
+									echo '<span class="supersale-label">Sale</span>';
+								}
+                            }
+                            if(in_array(74,$product->categories) && !(in_array(63,$product->categories))){
+
+								if($lang->getTag() == 'ru-RU') {
+									echo '<span class="supersale-label-stock">STOCK</span>';
+								}
+								elseif ($lang->getTag() == 'en-GB') {
+									echo '<span class="supersale-label-stock">STOCK</span>';
+								}
+								else{
+									echo '<span class="supersale-label-stock">STOCK</span>';
+								}
+                            }
+                            if(in_array(70,$product->categories)){
+                                if($lang->getTag() == 'ru-RU') {
+									echo '<span class="supercollection">NEW</span>';
+								}
+								elseif ($lang->getTag() == 'en-GB') {
+									echo '<span class="supercollection">NEW</span>';
+								}
+								else{
+									echo '<span class="supercollection">NEW</span>';
+								}
+                            }
 						?>
 					 </a>
 
@@ -273,8 +309,8 @@ if (!empty($this->products)) {
 					<?php } ?>
 				</div>
 
-				<div class="width70 floatright">
-   <div> 
+				<div class="price-details">
+   <div>
 
 
 
@@ -282,6 +318,10 @@ if (!empty($this->products)) {
 					<h2><?php echo JHTML::link ($product->link, $product->product_name); ?></h2>
 
 					<?php // Product Short Description
+                            if(in_array(63,$product->categories)){
+                                echo $this->currency->createPriceDiv ('basePrice', '', $product->prices);
+                            }
+
 					if (!empty($product->product_s_desc)) {
 						?>
 						<p class="product_s_desc">
@@ -308,45 +348,6 @@ if (!empty($this->products)) {
 							if (round($product->prices['salesPriceWithDiscount'],$this->currency->_priceConfig['salesPrice'][1]) != $product->prices['salesPrice']) {
 								echo $this->currency->createPriceDiv ('salesPriceWithDiscount', 'COM_VIRTUEMART_PRODUCT_SALESPRICE_WITH_DISCOUNT', $product->prices);
 							}
-							
-							
-                            if(in_array(63,$product->categories)){
-                                echo $this->currency->createPriceDiv ('basePrice', '', $product->prices);
-                               
-								if($lang->getTag() == 'ru-RU') { 
-									echo '<span class="supersale-label">Скидка</span>';
-								}
-								elseif ($lang->getTag() == 'en-GB') {
-									echo '<span class="supersale-label">reducere</span>';
-								}
-								else{
-									echo '<span class="supersale-label">sale</span>';
-								}
-                            }
-                            if(in_array(74,$product->categories)){
-                                echo $this->currency->createPriceDiv ('basePrice', '', $product->prices);
-                               
-								if($lang->getTag() == 'ru-RU') { 
-									echo '<span class="supersale-label-stock">STOCK</span>';
-								}
-								elseif ($lang->getTag() == 'en-GB') {
-									echo '<span class="supersale-label-stock">STOCK</span>';
-								}
-								else{
-									echo '<span class="supersale-label-stock">STOCK</span>';
-								}
-                            }
-                            if(in_array(70,$product->categories)){
-                                if($lang->getTag() == 'ru-RU') { 
-									echo '<span class="supercollection">новинка</span>';
-								}
-								elseif ($lang->getTag() == 'en-GB') {
-									echo '<span class="supercollection">NOU!</span>';
-								}
-								else{
-									echo '<span class="supercollection">NEW</span>';
-								}
-                            }
 							
 							echo $this->currency->createPriceDiv ('salesPrice', 'COM_VIRTUEMART_PRODUCT_SALESPRICE', $product->prices);
 
@@ -391,7 +392,8 @@ echo JHTML::link ( JRoute::_ ( 'index.php?option=com_virtuemart&view=productdeta
 		if ($iBrowseCol == $BrowseProducts_per_row || $iBrowseProduct == $BrowseTotalProducts) {
 			?>
 			<div class="clear"></div>
-   </div> <!-- end of row -->
+   </div>
+<!-- end of row -->
 			<?php
 			$iBrowseCol = 1;
 		} else {
@@ -416,4 +418,6 @@ echo JHTML::link ( JRoute::_ ( 'index.php?option=com_virtuemart&view=productdeta
 	echo JText::_ ('COM_VIRTUEMART_NO_RESULT') . ($this->keyword ? ' : (' . $this->keyword . ')' : '');
 }
 ?>
+
+</div>
 </div><!-- end browse-view -->

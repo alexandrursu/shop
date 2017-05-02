@@ -34,11 +34,9 @@ jQuery(document).ready(function() {
 		jQuery(".main-image a").attr("href",this.src );
 		jQuery(".main-zoom").attr("href",this.src );
 		jQuery(".main-image a").attr("title",this.alt );
-	}); 
-	jQuery(".main-zoom").click(function() {
-		jQuery(".main-image a").trigger( "click" );
 	});
-  if (jQuery(".additional-images .product-image").length <=4 ) {
+
+  if (jQuery(".additional-images .product-image").length <=2 ) {
     jQuery(".arrow-down-product,.arrow-up-product").hide();
     jQuery(".additional-images").css("padding","0")
   };
@@ -62,10 +60,9 @@ jQuery(document).ready(function() {
         jQuery(".additional-images .slider-container").animate({
             top: + slideHeight
         }, 200, function () {
-
             jQuery(".additional-images .slider-container .floatleft:first-child").appendTo(".additional-images .slider-container");
             jQuery(".additional-images .slider-container").css("bottom", "");
-jQuery(".slider-container .floatleft:first-child img").click();
+            jQuery(".slider-container .floatleft:first-child img").click();
         });
        
         
@@ -77,21 +74,30 @@ jQuery(".slider-container .floatleft:first-child img").click();
         }, 200, function () {
             jQuery(".additional-images .slider-container .floatleft:last-child").prependTo(".additional-images .slider-container");
             jQuery(".additional-images .slider-container").css("top", "");
-jQuery(".slider-container .floatleft:first-child img").click();
+            jQuery(".slider-container .floatleft:last-child img").click();
         });
        
         
     };
 
-    jQuery(".arrow-up-product").click(function () {
-        moveTop();
-        
+    jQuery(".arrow-up-product").bind("click", function(){
+            moveTop();
+              if(jQuery(".bullets li.active").is(":first-child")) {
+               jQuery(".bullets li.active").removeClass("active");
+               jQuery(".bullets li:last-child").addClass("active");
+              } else {
+                 jQuery(".bullets li.active").removeClass("active").prev().addClass("active");
+              }
     });
 
-    jQuery(".arrow-down-product").click(function () {
-        moveBottom();
-
-
+    jQuery(".arrow-down-product").bind("click", function(){
+         moveBottom();
+         if(jQuery(".bullets li.active").is(":last-child")) {
+          jQuery(".bullets li.active").removeClass("active");
+          jQuery(".bullets li:first-child").addClass("active");
+         } else {
+            jQuery(".bullets li.active").removeClass("active").next().addClass("active");
+         }
     });
 
 // click functions
@@ -106,16 +112,7 @@ $document->addScriptDeclaration ($imageJS);
 if (!empty($this->product->images)) {
 	$image = $this->product->images[0];
 	?>
-<div class="main-image">
-    <span class="main-arrow arrow-up-product "><i class="fa fa-angle-left"></i></span>
-    <span class="main-arrow arrow-down-product"><i class="fa fa-angle-right"></i></span>
 
-	<?php
-		echo $image->displayMediaFull("",true,"rel='vm-additional-images'");
-	?>
-
-	 <div class="clear"></div>
-</div>
 <?php
 	$count_images = count ($this->product->images);
 	if ($count_images > 0) {
@@ -123,8 +120,6 @@ if (!empty($this->product->images)) {
     <span class="main-zoom"><i class="fa fa-plus-circle"></i> ZOOM</span>
 
     <div class="additional-images">
-    <span class="arrow-up-product"><i class="fa fa-angle-up"></i></span>
-    <span class="arrow-down-product"><i class="fa fa-angle-down"></i></span>
     <div class="slider-container">
 		<?php
 		for ($i = 0; $i < $count_images; $i++) {
@@ -142,5 +137,20 @@ if (!empty($this->product->images)) {
     </div>
 	<?php
 	}
-}
-  // Showing The Additional Images END ?>
+} ?>
+<div class="main-image">
+
+    <span class="main-arrow arrow-up-product "><i class="fa fa-angle-left"></i></span>
+    <span class="main-arrow arrow-down-product"><i class="fa fa-angle-right"></i></span>
+
+	<?php
+		echo $image->displayMediaFull("",true,"rel='vm-additional-images'");
+	?>
+
+	 <div class="clear"></div>
+	 <ul class="bullets">
+          <li class="active"><a href="#" ></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+      </ul>
+</div>

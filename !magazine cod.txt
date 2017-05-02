@@ -1,0 +1,1220 @@
+<div class="row">
+	<div class="col-md-4 col-xs-12">
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+					<h4 class="panel-title"><a href="#collapseChisinau" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseChisinau">or. Chi?inau</a>
+					</h4>
+				</div>
+				<div class="panel-collapse collapse in" role="tabpanel" id="collapseChisinau" aria-labelledby="collapseListGroupHeading1" aria-expanded="true">
+					<ul class="list-group">
+						<li class="list-group-item click-magazine-tab current" data-tab="tab-centru">Centru</li>
+						<li class="list-group-item click-magazine-tab" data-tab="tab-buiucani">Buiucani</li>
+						<li class="list-group-item click-magazine-tab" data-tab="tab-riscani">Rî?cani</li>
+						<li class="list-group-item click-magazine-tab" data-tab="tab-botanica">Botanica</li>
+						<li class="list-group-item click-magazine-tab" data-tab="tab-telecentru">Telecentru</li>
+						<li class="list-group-item click-magazine-tab" data-tab="tab-ciocana">Ciocana</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab">
+					<h4 class="panel-title click-magazine-tab" data-tab="tab-balti"><a href="#collapseBalti" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseBl">mun. Bal?i</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab">
+					<h4 class="panel-title click-magazine-tab" data-tab="tab-sv"><a href="#collapseSV" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSV">or. ?tefan Voda</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab">
+					<h4 class="panel-title click-magazine-tab" data-tab="tab-orhei"><a href="#collapseOrhei" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseOrhei">or. Orhei</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab">
+					<h4 class="panel-title click-magazine-tab" data-tab="tab-hincesti"><a href="#collapseHincesti" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseHincesti">or. Hînce?ti</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab">
+					<h4 class="panel-title click-magazine-tab" data-tab="tab-cahul"><a href="#collapseCahul" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCahul">or. Cahul</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab">
+					<h4 class="panel-title click-magazine-tab" data-tab="tab-soroca"><a href="#collapseSoroca" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSoroca">or. Soroca</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab">
+					<h4 class="panel-title click-magazine-tab" data-tab="tab-ungheni"><a href="#collapseUngheni" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseUngheni">or. Ungheni</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab">
+					<h4 class="panel-title click-magazine-tab" data-tab="tab-telenesti"><a href="#collapseTelenesti" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTelenesti">or. Telene?ti</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab">
+					<h4 class="panel-title click-magazine-tab" data-tab="tab-cs"><a href="#collapseCauseni" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCauseni">or. Cau?eni</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab">
+					<h4 class="panel-title click-magazine-tab" data-tab="tab-rascani"><a href="#collapseRascani" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseRascani">or. Râ?cani</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab">
+					<h4 class="panel-title click-magazine-tab" data-tab="tab-comrat"><a href="#collapseComrat" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseComrat">mun. Comrat</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="panel-group" role="tablist">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab">
+					<h4 class="panel-title click-magazine-tab" data-tab="tab-falesti"><a href="#collapseFalesti" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFalesti">or. Falesti</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-8 col-xs-12">
+		<!-- Start Chisinau Centru -->
+		<div id="tab-centru" class="magazine-content current">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation"><a href="#centruStefan126" aria-controls="centruStefan126" role="tab" data-toggle="tab">str. ?tefan cel Mare 126 </a>
+				</li>
+				<li role="presentation" class="active"><a href="#centruStefan184" aria-controls="centruStefan184" role="tab" data-toggle="tab">bd.Stefan cel Mare 184</a>
+				</li>
+				<li role="presentation"><a href="#centruGrigoreVieru13" aria-controls="centruGrigoreVieru13" role="tab" data-toggle="tab">str. Grigore Vieru 13</a>
+				</li>
+				<li role="presentation"><a href="#armeneasca" aria-controls="armeneasca" role="tab" data-toggle="tab">str. Armeneasca 42</a>
+				</li>
+				<li role="presentation"><a href="#armeneasca" aria-controls="armeneasca33" role="tab" data-toggle="tab">str. Armeneasca 33</a>
+				</li>
+				<li role="presentation"><a href="#gemeni" aria-controls="gemeni" role="tab" data-toggle="tab">c/c Gemenii, St.cel Mare 136; but. 29/1</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start Chisinau str. Armeneasca 33-->
+				<div role="tabpanel" class="tab-pane" id="armeneasca33">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 801</div>
+							<div>078 303 808</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/str_Armeneasca_33.JPG" alt="str. Armeneasca 33" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.1711324423295!2d28.8333621153515!3d47.017245779149995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c2ff16358c5%3A0x3e2a97343bbee50c!2sFederation+of+Underwater+Activity!5e0!3m2!1sen!2s!4v1493376133140" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. Armeneasca 33 -->
+				<!-- Start Chisinau str. Stefan cel Mare 184 -->
+				<div role="tabpanel" class="tab-pane active" id="centruStefan184">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 801</div>
+							<div>078 303 808</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/bd_Stefan_cel_Mare_184.JPG" alt="bd. Stefan cel Mare 184" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.4187545884993!2d28.81967741561061!3d47.03201317915071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97dc82d3b4d9b%3A0x64a7f31f15615a8a!2zQnVsZXZhcmR1bCDImHRlZmFuIGNlbCBNYXJlIMiZaSBTZsOubnQgMTg0LCBDaGnImWluxIN1LCBNb2xkb3Zh!5e0!3m2!1sen!2s!4v1492525196229" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. Stefan cel Mare 184 -->
+				<!-- Start Chisinau str. Stefan cel Mare 126 -->
+				<div role="tabpanel" class="tab-pane" id="centruStefan126">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/bd_Stefan-126.JPG" alt="bd. Stefan cel Mare 126" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.009915821173!2d28.83715801561035!3d47.02041037915015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c309ae06feb%3A0x2acd311fad8b1e97!2zQnVsZXZhcmR1bCDImHRlZmFuIGNlbCBNYXJlIMiZaSBTZsOubnQgMTI2LCBDaGnImWluxIN1LCBNb2xkb3Zh!5e0!3m2!1sen!2s!4v1492503525904" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. Stefan cel Mare 126 -->
+				<!-- Start Chisinau str. Grigore Vieru 13 -->
+				<div role="tabpanel" class="tab-pane" id="centruGrigoreVieru13">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/bd_Grigore_Vieru_13.JPG" alt="Bulevardul Grigore Vieru 13" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.498571207226!2d28.83795001502794!3d47.030446735593635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c4bca135af7%3A0xee366f5bd48c533d!2sBulevardul+Grigore+Vieru+13%2C+Chi%C8%99in%C4%83u+2005%2C+Moldova!5e0!3m2!1sen!2s!4v1492525739448" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. Grigore Vieru 13 -->
+				<!-- Start Chisinau str. Armeneasca 42 -->
+				<div role="tabpanel" class="tab-pane" id="armeneasca">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/str_Armeneasca_42.JPG" alt="str. Armeneasca 42" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.0962053930352!2d28.8362400153515!3d47.01871657915007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c3aa1fb03c7%3A0x5bd1c6b407604dab!2zU3RyYWRhIEFybWVuZWFzY8SDIDQyLCBDaGnImWluxIN1LCBNb2xkb3Zh!5e0!3m2!1sen!2s!4v1492594864167" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. Armeneasca 42 -->
+				<!-- Start Chisinau c/c Gemenii, St.cel Mare 136; but. 29/1 -->
+				<div role="tabpanel" class="tab-pane" id="gemeni">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/136.JPG" alt="St.cel Mare 136; but. 29/1" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.840921369476!2d28.832169815351673!3d47.02372747915034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c33ff0651ef%3A0xb1b00870e13839b3!2sGemenii!5e0!3m2!1sen!2s!4v1492594972571" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau c/c Gemenii, St.cel Mare 136; but. 29/1 -->
+			</div>
+		</div>
+		<!-- End Chisinau Centru -->
+		<!----------------------------------------------------------------------------------------------------------->
+		<!-- Start Chisinau Buiucani -->
+		<div id="tab-buiucani" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#buiucaniCreanga65" aria-controls="buiucaniCreanga65" role="tab" data-toggle="tab">str. I. Creanga 76 nr. 65</a>
+				</li>
+				<li role="presentation"><a href="#buiucaniCreanga76" aria-controls="buiucaniCreanga76" role="tab" data-toggle="tab">str. I. Creanga 76</a>
+				</li>
+				<li role="presentation"><a href="#buiucaniIesilor" aria-controls="buiucaniIesilor" role="tab" data-toggle="tab">str. Calea Ie?ilor 1b</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start Chisinau str. I. Creanga 76 nr. 65 -->
+				<div role="tabpanel" class="tab-pane active" id="buiucaniCreanga65">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/str_I_Creanga_76_nr_65.JPG" alt=" str. I. Creanga 76 nr. 65" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.5818890699065!2d28.796025615027894!3d47.02881153570562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97dc2b6abbf97%3A0x31a2c580d6a14e76!2sStrada+Ion+Creang%C4%83+76%2C+Chi%C8%99in%C4%83u+2039%2C+Moldova!5e0!3m2!1sen!2s!4v1492596013878" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. I. Creanga 76 nr. 65 -->
+				<!-- Start Chisinau str. I. Creanga 76 -->
+				<div role="tabpanel" class="tab-pane" id="buiucaniCreanga76">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/str_I_Creanga_76_nr_65.JPG" alt="str. I. Creanga 76" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.009915821173!2d28.83715801561035!3d47.02041037915015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c309ae06feb%3A0x2acd311fad8b1e97!2zQnVsZXZhcmR1bCDImHRlZmFuIGNlbCBNYXJlIMiZaSBTZsOubnQgMTI2LCBDaGnImWluxIN1LCBNb2xkb3Zh!5e0!3m2!1sen!2s!4v1492503525904" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. I. Creanga 76 -->
+				<!-- Start Chisinau str. Calea Ie?ilor 1b -->
+				<div role="tabpanel" class="tab-pane" id="buiucaniIesilor">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/str_Calea_Iesilor_1b.JPG" alt="str. Calea Ie?ilor 1b" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.143818782424!2d28.80956201502823!3d47.03740863511707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97dbf1af502e3%3A0x4084e7de50e4daf1!2zQ2FsZWEgSWXFn2lsb3IgMWIsIENoaciZaW7Eg3UsIE1vbGRvdmE!5e0!3m2!1sen!2s!4v1492596104950" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. Calea Ie?ilor 1b -->
+			</div>
+		</div>
+		<!-- End Chisinau Buiucani -->
+		<!------------------------------------------------------------------------------------------------------------------------>
+		<!-- Start Chisinau Riscani -->
+		<div id="tab-riscani" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#riscanistrAlecoRusso4" aria-controls="riscanistrAlecoRusso4" role="tab" data-toggle="tab">str. Aleco Russo 4</a>
+				</li>
+				<li role="presentation"><a href="#riscaniMoscovei16" aria-controls="riscaniMoscovei16" role="tab" data-toggle="tab">bd. Moscovei 16</a>
+				</li>
+				<li role="presentation"><a href="#riscaniBogdanVoevod2" aria-controls="riscaniBogdanVoevod2" role="tab" data-toggle="tab">str. Bogdan Voevod 2</a>
+				</li>
+				<li role="presentation"><a href="#riscaniVladimirescu" aria-controls="riscaniVladimirescu" role="tab" data-toggle="tab">str. Vladimirescu 14</a>
+				</li>
+				<li role="presentation"><a href="#riscaniCevcari" aria-controls="riscaniCevcari" role="tab" data-toggle="tab">str.Cevcari 3/1</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start Chisinau str. Aleco Russo 4 -->
+				<div role="tabpanel" class="tab-pane active" id="riscanistrAlecoRusso4">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/str_Aleco_Russo_4.JPG" alt="str. Aleco Russo 4" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.8085049416604!2d28.86174081502845!3d47.0439883346665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cf839828bc1%3A0x4dfa34a21d85491e!2sStrada+Alecu+Russo+4%2C+Chi%C8%99in%C4%83u%2C+Moldova!5e0!3m2!1sen!2s!4v1492596804491" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. Aleco Russo 4 -->
+				<!-- Start Chisinau bd. Moscovei 16 -->
+				<div role="tabpanel" class="tab-pane" id="riscaniMoscovei16">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/bd_Moscovei_16.JPG" alt="bd. Moscovei 16" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.281318510915!2d28.863637315028882!3d47.05433163395836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97ce30ddcbaed%3A0x8366583075b480f9!2sFarmacia+Familiei!5e0!3m2!1sen!2s!4v1492596856795" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau bd. Moscovei 16 -->
+				<!-- Start Chisinau str. Bogdan Voevod 2 -->
+				<div role="tabpanel" class="tab-pane" id="riscaniBogdanVoevod2">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/str_Bogdan_Voevod_2.jpg" alt="str. Bogdan Voevod 2" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.8069148457816!2d28.85731701502844!3d47.04401953466441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cf89764a92b%3A0xcf6b36d4919bd088!2sStrada+Bogdan+Voievod+2%2C+Chi%C8%99in%C4%83u%2C+Moldova!5e0!3m2!1sen!2s!4v1492596919111" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. Bogdan Voevod 2 -->
+				<!-- Start Chisinau str. Vladimirescu 14 -->
+				<div role="tabpanel" class="tab-pane" id="riscaniVladimirescu">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/str_Vladimirescu 14.JPG" alt="str. Vladimirescu 14" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.238389892481!2d28.8601344650281!3d47.03555278524404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c5bbbb07029%3A0x884bc6a4110060af!2sTudor+Vladimirescu+14%2C+Strada+Tudor+Vladimirescu+14%2C+Chi%C8%99in%C4%83u+2024%2C+Moldova!5e0!3m2!1sen!2s!4v1492596966305" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. Vladimirescu 14 -->
+				<!-- Start Chisinau str.Cevcari 3/1 -->
+				<div role="tabpanel" class="tab-pane" id="riscaniCevcari">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/str_Cevcari_31.JPG" alt="str.Cevcari 3/1" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.0072901094513!2d28.844687415029178!3d47.05970733359012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d10f54ab0b3%3A0x85cba6665e6f878!2sStrada+Ceucari+3%2C+Chi%C8%99in%C4%83u%2C+Moldova!5e0!3m2!1sen!2s!4v1492597025758" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str.Cevcari 3/1 -->
+			</div>
+		</div>
+		<!-- End Chisinau Riscani -->
+		<!------------------------------------------------------------------------------------------------------------------------>
+		<!-- Start Chisinau Botanica -->
+		<div id="tab-botanica" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#botanicaTrandafirilor" aria-controls="botanicaTrandafirilor" role="tab" data-toggle="tab">str. Trandafirilor 15/2</a>
+				</li>
+				<li role="presentation"><a href="#botanicaDacia" aria-controls="botanicaDacia" role="tab" data-toggle="tab">bd. Dacia 3/3</a>
+				</li>
+				<li role="presentation"><a href="#botanicaDecebal" aria-controls="botanicaDecebal" role="tab" data-toggle="tab">bd. Decebal 63</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start Chisinau str. Trandafirilor 15/2 -->
+				<div role="tabpanel" class="tab-pane active" id="botanicaTrandafirilor">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/str_Trandafirilor_152.JPG" alt="str. Trandafirilor 15/2" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2721.063636197786!2d28.852740915026708!3d46.999723437696346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97ea8588b9def%3A0x2920ef4bb30fcd55!2sStrada+Trandafirilor+6%2F2%2C+Chi%C8%99in%C4%83u+2038%2C+Moldova!5e0!3m2!1sen!2s!4v1492600951856" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. Trandafirilor 15/2 -->
+				<!-- Start Chisinau bd. Dacia 3/3 -->
+				<div role="tabpanel" class="tab-pane" id="botanicaDacia">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/bd_Dacia_33.JPG" alt="bd. Dacia 3/3" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2721.476927655942!2d28.849475515350388!3d46.99160767914874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97eb1f5e51775%3A0xf9d0edf836bab87b!2sBulevardul+Dacia+3%2F3%2C+Chi%C8%99in%C4%83u%2C+Moldova!5e0!3m2!1sen!2s!4v1492602522447" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau bd. Dacia 3/3 -->
+				<!-- Start Chisinau bd. Decebal 63 -->
+				<div role="tabpanel" class="tab-pane" id="botanicaDecebal">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/bd_Decebal_63.JPG" alt="bd. Decebal 63" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.8069148457816!2d28.85731701502844!3d47.04401953466441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cf89764a92b%3A0xcf6b36d4919bd088!2sStrada+Bogdan+Voievod+2%2C+Chi%C8%99in%C4%83u%2C+Moldova!5e0!3m2!1sen!2s!4v1492596919111" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau bd. Decebal 63 -->
+			</div>
+		</div>
+		<!-- End Chisinau Botanica -->
+		<!------------------------------------------------------------------------------------------------------------------------>
+		<!-- Start Chisinau Ciocana -->
+		<div id="tab-ciocana" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#ciocanaMirceaBatrin3" aria-controls="ciocanaMirceaBatrin3" role="tab" data-toggle="tab">str.Mircea ?el Batrin 3</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start Chisinau str.Mircea ?el Batrin 3 -->
+				<div role="tabpanel" class="tab-pane active" id="ciocanaMirceaBatrin3">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/str_Mircea_?el_Batrin_3.JPG" alt="str.Mircea ?el Batrin 3" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.0644234231668!2d28.88677421502834!3d47.038966635010425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c89149ac3bd%3A0x9991d3cf30737957!2zQnVsZXZhcmR1bCBNaXJjZWEgY2VsIELEg3Ryw65uIDMsIENoaciZaW7Eg3UsIE1vbGRvdmE!5e0!3m2!1sen!2s!4v1492606761008" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str.Mircea ?el Batrin 3 -->
+			</div>
+		</div>
+		<!-- End Chisinau Ciocana -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start Chisinau Telecentru -->
+		<div id="tab-telecentru" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#telecentruAcademiei" aria-controls="telecentruAcademiei" role="tab" data-toggle="tab">str. Academiei 15/1</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start Chisinau str. Academiei 15/1 -->
+				<div role="tabpanel" class="tab-pane active" id="telecentruAcademiei">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/str_Academiei_151.JPG" alt="str. Academiei 15/1" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.81308624941!2d28.81010721502694!3d47.00464293735974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97e8612f98229%3A0x6e24b07ec042446f!2sStrada+Academiei+15%2F1%2C+Chi%C8%99in%C4%83u%2C+Moldova!5e0!3m2!1sen!2s!4v1492606856438" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Chisinau str. Academiei 15/1 -->
+			</div>
+		</div>
+		<!-- End Chisinau Telecentru -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start Balti -->
+		<div id="tab-balti" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#baltiIndependentei" aria-controls="baltiIndependentei" role="tab" data-toggle="tab">str. Independentei 37A</a>
+				</li>
+				<li role="presentation"><a href="#baltiAlecsandri2" aria-controls="baltiAlecsandri2" role="tab" data-toggle="tab">str.Vasile Alecsandri, nr.2</a>
+				</li>
+				<li role="presentation"><a href="#baltiSM" aria-controls="baltiSM" role="tab" data-toggle="tab">str.?tefan cel Mare 39</a>
+				</li>
+				<li role="presentation"><a href="#baltiKievului" aria-controls="baltiKievului" role="tab" data-toggle="tab">str.Kievului 2</a>
+				</li>
+				<li role="presentation"><a href="#baltiAlecsandri4" aria-controls="baltiAlecsandri4" role="tab" data-toggle="tab">str.Vasile Alecsandri, 4</a>
+				</li>
+				<li role="presentation"><a href="#baltiBulgara" aria-controls="baltiBulgara" role="tab" data-toggle="tab">str.Bulgara 132</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start str. Independentei 37A -->
+				<div role="tabpanel" class="tab-pane active" id="baltiIndependentei">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str. Independentei 37A" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.285421691266!2d27.920186515057228!3d47.75651788560364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb672e3b17f0f7%3A0x7315bc203aef4e1a!2sStrada+Independen%C8%9Bei+37%2C+B%C4%83l%C8%9Bi+3100%2C+Moldova!5e0!3m2!1sen!2s!4v1492607944025" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Balti str. Independentei 37A-->
+				<!-- Start Balti str.Vasile Alecsandri, nr.2 -->
+				<div role="tabpanel" class="tab-pane" id="baltiAlecsandri2">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str.Vasile Alecsandri, nr.2" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.15305211964!2d27.936033015057287!3d47.75908558542592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb672ace0cd06d%3A0x9b68b6a463024529!2sStrada+Vasile+Alecsandri+2%2C+B%C4%83l%C8%9Bi+3100%2C+Moldova!5e0!3m2!1sen!2s!4v1492607983508" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Balti str.Vasile Alecsandri, nr.2-->
+				<!-- Start Balti str.?tefan cel Mare 39 -->
+				<div role="tabpanel" class="tab-pane " id="baltiSM">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str.?tefan cel Mare 39" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe 220="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2681.94326132346!2d27.926915815057523!3d47.763154885144075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb60d2a235bb89%3A0xc766bbf465551e36!2zU3RyYWRhIMiYdGVmYW4gY2VsIE1hcmUgMzksIELEg2zIm2ksIE1vbGRvdmE!5e0!3m2!1sen!2s!4v1492608153899" width="100%" height="" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Balti str.?tefan cel Mare 39-->
+				<!-- Start Balti str.Kievului 2 -->
+				<div role="tabpanel" class="tab-pane " id="baltiKievului">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str.Kievului 2" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2681.3040153423467!2d27.92588351505801!3d47.77555268428547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb60c8ab2d1673%3A0xac0e4e2c898c8e0b!2zU3RyYWRhIEtpZXYsIELEg2zIm2ksIE1vbGRvdmE!5e0!3m2!1sen!2s!4v1492608446633" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Balti str.Kievului 2 -->
+				<!-- Start Baltistr.Vasile Alecsandri, 4 -->
+				<div role="tabpanel" class="tab-pane " id="baltiAlecsandri4">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str.Vasile Alecsandri, 4" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.176848830334!2d27.936509115057287!3d47.75862398545782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb672ab807a9d9%3A0x49cfa3ba1a0ae375!2sStrada+Vasile+Alecsandri+4%2C+B%C4%83l%C8%9Bi+3100%2C+Moldova!5e0!3m2!1sen!2s!4v1492608538013" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Balti str.Vasile Alecsandri, 4 -->
+				<!-- Start Balti str.Bulgara 132 -->
+				<div role="tabpanel" class="tab-pane " id="baltiBulgara">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str.Bulgara 132" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2680.7719829200737!2d27.896571815058355!3d47.78586928357091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb5e1dfd674a61%3A0xe454de804a186a6e!2zU3RyYWRhIEJ1bGdhcsSDIDEzMiwgQsSDbMibaSAzMTEyLCBNb2xkb3Zh!5e0!3m2!1sen!2s!4v1492608720035" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End Balti str.Bulgara -->
+			</div>
+		</div>
+		<!-- End Balti -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start or. ?tefan Voda -->
+		<div id="tab-sv" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#sv" aria-controls="sv" role="tab" data-toggle="tab">str. 31 August, 3</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start or. ?tefan Voda -->
+				<div role="tabpanel" class="tab-pane active" id="sv">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str. 31 August, 3" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2745.4449477056833!2d29.666132515007515!3d46.51909647045625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c844d45f7a9b9f%3A0xd8959b573e43e248!2sStrada+31+August+1989+3%2C+%C5%9Etefan+Vod%C4%83%2C+Moldova!5e0!3m2!1sen!2s!4v1492609697322" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>&gt;</div>
+					</div>
+				</div>
+				<!-- End or. ?tefan Voda -->
+			</div>
+		</div>
+		<!-- End or. ?tefan Voda -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start or. Orhei -->
+		<div id="tab-orhei" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#orhei" aria-controls="orhei" role="tab" data-toggle="tab">str. Vasile Lupu 41</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start or. Orhei -->
+				<div role="tabpanel" class="tab-pane active" id="orhei">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str. Vasile Lupu 41" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.883393376151!2d28.792909815027613!3d47.02289383611067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97dde8cf89f63%3A0xa1414e8a54507329!2sStrada+Vasile+Lupu+41%2C+Chi%C8%99in%C4%83u+2008%2C+Moldova!5e0!3m2!1sen!2s!4v1492610157231" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End or. Orhei-->
+			</div>
+		</div>
+		<!-- End or.Orhei -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start or. Hînce?ti -->
+		<div id="tab-hincesti" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#hincesti" aria-controls="hincesti" role="tab" data-toggle="tab">str. 31 August 1989</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start or. Hînce?ti -->
+				<div role="tabpanel" class="tab-pane active" id="hincesti">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str. 31 August 1989" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.9478051636884!2d28.828790215027556!3d47.02162953619725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c3230580131%3A0x6eeeb9b58948b143!2sStrada+31+August+1989%2C+Chi%C8%99in%C4%83u%2C+Moldova!5e0!3m2!1sen!2s!4v1492610374868" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End or. Hînce?ti-->
+			</div>
+		</div>
+		<!-- End or.Hînce?ti -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start or. Cahul -->
+		<div id="tab-cahul" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#cahul" aria-controls="cahul" role="tab" data-toggle="tab">str. Seliviorstov, 9z</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start or. Cahul -->
+				<div role="tabpanel" class="tab-pane active" id="cahul">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str. Seliviorstov, 9z" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44418.61767826403!2d28.16791470034098!3d45.90803872474387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b65c95ca29ef7d%3A0x254c4e01d94d6250!2sCahul%2C+Moldova!5e0!3m2!1sen!2s!4v1492610495612" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End or. Cahul-->
+			</div>
+		</div>
+		<!-- End or.Cahul -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start or. Soroca -->
+		<div id="tab-soroca" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#soroca" aria-controls="soroca" role="tab" data-toggle="tab">str. ?tefan cel Mare 12</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start or. Soroca -->
+				<div role="tabpanel" class="tab-pane active" id="soroca">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str. ?tefan cel Mare 12" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.4327661750244!2d28.29821261507363!3d48.15973995759694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ccc1e1d3a4a44b%3A0x23484869dd9c8d20!2s%C5%9Etefan+cel+Mare+%C5%9Fi+Sf%C3%A2nt+12%2C+Soroca%2C+Moldova!5e0!3m2!1sen!2s!4v1492610992000" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End or. Soroca-->
+			</div>
+		</div>
+		<!-- End or.Soroca -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start or. Ungheni -->
+		<div id="tab-ungheni" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#ungheni" aria-controls="ungheni" role="tab" data-toggle="tab">str. M. Eminescu 12</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start or. Ungheni -->
+				<div role="tabpanel" class="tab-pane active" id="ungheni">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str. M. Eminescu 12" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.421506160318!2d27.797844015358926!3d47.20833427916025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb0024793520fb%3A0x78266c5cd60780bc!2sstrada+Mihai+Eminescu+12%2C+Ungheni+2600%2C+Moldova!5e0!3m2!1sen!2s!4v1492669366268" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End or. Ungheni-->
+			</div>
+		</div>
+		<!-- End or.Ungheni -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start or. telenesti -->
+		<div id="tab-telenesti" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#telenesti" aria-controls="telenesti" role="tab" data-toggle="tab">str. Dacia 4/1</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start or. telenesti -->
+				<div role="tabpanel" class="tab-pane active" id="telenesti">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str. Dacia 4/1" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.1403955513106!2d28.364952215370742!3d47.506656979178196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb9bad97b48adb%3A0x6c262df2930ce572!2sStrada+Dacia+4%2C+Telene%C8%99ti%2C+Moldova!5e0!3m2!1sen!2s!4v1492669431154" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End or. telenesti-->
+			</div>
+		</div>
+		<!-- End or.telenesti -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start or. causeni -->
+		<div id="tab-cs" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#cs" aria-controls="cs" role="tab" data-toggle="tab">bd. M. Eminescu 25, nr3</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start or. causeni -->
+				<div role="tabpanel" class="tab-pane active" id="cs">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="bd. M. Eminescu 25, nr3" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2737.1873519649625!2d29.05810831533833!3d46.682303179134195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9bcb003463de3%3A0x1845704b1795c49!2sStrada+Mihai+Eminescu%2C+C%C4%83inari%2C+Moldova!5e0!3m2!1sen!2s!4v1492669562226" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End or. causeni-->
+			</div>
+		</div>
+		<!-- End or.causeni -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start or.Râ?cani -->
+		<div id="tab-rascani" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#rascani" aria-controls="rascani" role="tab" data-toggle="tab">str. Independen?ei, 14E</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start or.Râ?cani -->
+				<div role="tabpanel" class="tab-pane active" id="rascani">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="or.Râ?cani	" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d342190.62643914507!2d27.260907406986306!3d47.9293371528971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb552b7f088fdb%3A0x9c28189ff99c22a0!2zUsOuyJljYW5pIERpc3RyaWN0LCBNb2xkb3Zh!5e0!3m2!1sen!2s!4v1493377488575" width="100%" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End or.Râ?cani -->
+			</div>
+		</div>
+		<!-- End or.Râ?cani -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start mun. Comrat -->
+		<div id="tab-comrat" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#comrat" aria-controls="rascani" role="tab" data-toggle="tab">str. Lenina, 176/2</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start mun. Comrat -->
+				<div role="tabpanel" class="tab-pane active" id="comrat">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="or.Comrat	" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.778013948599!2d28.656127015324042!3d46.31424597912026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b62748c858431b%3A0xce9b471a3305bdd6!2sStrada+Lenin%2C+Comrat%2C+Moldova!5e0!3m2!1sen!2s!4v1493377309491" width="100%" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End or.Comrat -->
+			</div>
+		</div>
+		<!-- End or.Comrat -->
+		<!------------------------------------------------------------------------------------------------------------>
+		<!-- Start mun. Falesti -->
+		<div id="tab-falesti" class="magazine-content">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#rascani" aria-controls="rascani" role="tab" data-toggle="tab">str. M. Eminescu 1B</a>
+				</li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Start mun. Falesti -->
+				<div role="tabpanel" class="tab-pane active" id="rascani">
+					<div class="row">
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Contacte:</b>
+							</div>
+							<div>tel: 078 303 817</div>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+							<div><b>Orar de lucru:</b>
+							</div>
+							<div>Luni - Sîmbata: 09:00 - 20:00</div>
+							<div>Duminica: 10:00 - 17:00</div>
+						</div>
+					</div>
+					<div class="row m-top-14">
+						<div class="col-md-6 col-xs-12"><img src="images/maicom/magazine/new/no-photo.jpg" alt="str. M. Eminescu 1B" />
+						</div>
+						<div class="col-md-6 col-xs-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.803806275202!2d27.712775315373303!3d47.57160557918241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb6ac8ec99bd3f%3A0x7d35034d3e5ef714!2sStrada+Mihai+Eminescu%2C+F%C4%83le%C8%99ti%2C+Moldova!5e0!3m2!1sen!2s!4v1493377168901" width="100%" height="220" frameborder="0" style="border: 0;" allowfullscreen="true"></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- End or.Falesti -->
+			</div>
+		</div>
+		<!-- End or.Falesti -->
+		<!------------------------------------------------------------------------------------------------------------>
+	</div>
+</div>

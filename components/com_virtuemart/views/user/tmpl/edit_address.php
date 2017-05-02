@@ -82,57 +82,6 @@ echo shopFunctionsF::getLoginForm (TRUE, FALSE, $url);
 
 	<form method="post" id="userForm" name="userForm" class="form-validate">
 		<!--<form method="post" id="userForm" name="userForm" action="<?php echo JRoute::_ ('index.php'); ?>" class="form-validate">-->
-		<div class="control-buttons">
-			<?php
-			if (strpos ($this->fTask, 'cart') || strpos ($this->fTask, 'checkout')) {
-				$rview = 'cart';
-			}
-			else {
-				$rview = 'user';
-			}
-// echo 'rview = '.$rview;
-
-			if (strpos ($this->fTask, 'checkout') || $this->address_type == 'ST') {
-				$buttonclass = 'default';
-			}
-			else {
-				$buttonclass = 'button vm-button-correct';
-			}
-
-
-			if (VmConfig::get ('oncheckout_show_register', 1) && $this->userId == 0 && !VmConfig::get ('oncheckout_only_registered', 0) && $this->address_type == 'BT' and $rview == 'cart') {
-				echo JText::sprintf ('COM_VIRTUEMART_ONCHECKOUT_DEFAULT_TEXT_REGISTER', JText::_ ('COM_VIRTUEMART_REGISTER_AND_CHECKOUT'), JText::_ ('COM_VIRTUEMART_CHECKOUT_AS_GUEST'));
-			}
-			else {
-				//echo JText::_('COM_VIRTUEMART_REGISTER_ACCOUNT');
-			}
-			if (VmConfig::get ('oncheckout_show_register', 1) && $this->userId == 0 && $this->address_type == 'BT' and $rview == 'cart') {
-				?>
-
-				<button class="<?php echo $buttonclass ?>" type="submit" onclick="javascript:return callValidatorForRegister(userForm);"
-				        title="<?php echo JText::_ ('COM_VIRTUEMART_REGISTER_AND_CHECKOUT'); ?>"><?php echo JText::_ ('COM_VIRTUEMART_REGISTER_AND_CHECKOUT'); ?></button>
-				<?php if (!VmConfig::get ('oncheckout_only_registered', 0)) { ?>
-					<button class="<?php echo $buttonclass ?>" title="<?php echo JText::_ ('COM_VIRTUEMART_CHECKOUT_AS_GUEST'); ?>" type="submit"
-					        onclick="javascript:return myValidator(userForm, '<?php echo $this->fTask; ?>');"><?php echo JText::_ ('COM_VIRTUEMART_CHECKOUT_AS_GUEST'); ?></button>
-					<?php } ?>
-				<button class="default" type="reset"
-				        onclick="window.location.href='<?php echo JRoute::_ ('index.php?option=com_virtuemart&view=' . $rview); ?>'"><?php echo JText::_ ('COM_VIRTUEMART_CANCEL'); ?></button>
-
-
-				<?php
-			}
-			else {
-				?>
-
-				<button class="<?php echo $buttonclass ?>" type="submit"
-				        onclick="javascript:return myValidator(userForm, '<?php echo $this->fTask; ?>');"><?php echo JText::_ ('COM_VIRTUEMART_SAVE'); ?></button>
-				<button class="default" type="reset"
-				        onclick="window.location.href='<?php echo JRoute::_ ('index.php?option=com_virtuemart&view=' . $rview); ?>'"><?php echo JText::_ ('COM_VIRTUEMART_CANCEL'); ?></button>
-
-				<?php } ?>
-		</div>
-
-
 		<?php
 		if (!class_exists ('VirtueMartCart')) {
 			require(JPATH_VM_SITE . DS . 'helpers' . DS . 'cart.php');
@@ -146,6 +95,71 @@ echo shopFunctionsF::getLoginForm (TRUE, FALSE, $url);
 		echo $this->loadTemplate ('userfields');
 
 		?>
+
+		<div class="container">
+		<div class="row">
+            <div class="col-md-4 col-xs-12">
+            </div>
+            <div class="col-md-4 col-xs-12">
+            <div class="control-buttons">
+                <?php
+                if (strpos ($this->fTask, 'cart') || strpos ($this->fTask, 'checkout')) {
+                    $rview = 'cart';
+                }
+                else {
+                    $rview = 'user';
+                }
+                // echo 'rview = '.$rview;
+
+                if (strpos ($this->fTask, 'checkout') || $this->address_type == 'ST') {
+                    $buttonclass = 'continue';
+                }
+                else {
+                    $buttonclass = 'button vm-button-correct';
+                }
+
+
+                if (VmConfig::get ('oncheckout_show_register', 1) && $this->userId == 0 && !VmConfig::get ('oncheckout_only_registered', 0) && $this->address_type == 'BT' and $rview == 'cart') {
+                    echo JText::sprintf ('COM_VIRTUEMART_ONCHECKOUT_DEFAULT_TEXT_REGISTER', JText::_ ('COM_VIRTUEMART_REGISTER_AND_CHECKOUT'), JText::_ ('COM_VIRTUEMART_CHECKOUT_AS_GUEST'));
+                }
+                else {
+                    //echo JText::_('COM_VIRTUEMART_REGISTER_ACCOUNT');
+                }
+                if (VmConfig::get ('oncheckout_show_register', 1) && $this->userId == 0 && $this->address_type == 'BT' and $rview == 'cart') {
+                    ?>
+
+                    <button class="<?php echo $buttonclass ?>" type="submit" onclick="javascript:return callValidatorForRegister(userForm);"
+                            title="<?php echo JText::_ ('COM_VIRTUEMART_REGISTER_AND_CHECKOUT'); ?>"><?php echo JText::_ ('COM_VIRTUEMART_REGISTER_AND_CHECKOUT'); ?></button>
+                    <?php if (!VmConfig::get ('oncheckout_only_registered', 0)) { ?>
+                        <button class="<?php echo $buttonclass ?>" title="<?php echo JText::_ ('COM_VIRTUEMART_CHECKOUT_AS_GUEST'); ?>" type="submit"
+                                onclick="javascript:return myValidator(userForm, '<?php echo $this->fTask; ?>');"><?php echo JText::_ ('COM_VIRTUEMART_CHECKOUT_AS_GUEST'); ?></button>
+                        <?php } ?>
+                    <button class="continue fr" type="reset"
+                            onclick="window.location.href='<?php echo JRoute::_ ('index.php?option=com_virtuemart&view=' . $rview); ?>'"><?php echo JText::_ ('COM_VIRTUEMART_CANCEL'); ?></button>
+
+
+                    <?php
+                }
+                else {
+                    ?>
+
+                    <button class=" fr <?php echo $buttonclass ?>" type="submit"
+                            onclick="javascript:return myValidator(userForm, '<?php echo $this->fTask; ?>');"><?php echo JText::_ ('COM_VIRTUEMART_SAVE'); ?></button>
+                    <button class="continue fl" type="reset"
+                            onclick="window.location.href='<?php echo JRoute::_ ('index.php?option=com_virtuemart&view=' . $rview); ?>'"><?php echo JText::_ ('COM_VIRTUEMART_CANCEL'); ?></button>
+
+                    <?php } ?>
+            </div>
+
+		        </div>
+                <div class="col-md-4 col-xs-12">
+                </div>
+            </div>
+        </div>
+
+
+
+
 </fieldset>
 <?php // }
 if ($this->userDetails->JUser->get ('id')) {

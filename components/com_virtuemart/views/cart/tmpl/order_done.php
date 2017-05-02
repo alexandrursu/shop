@@ -20,6 +20,6 @@ defined('_JEXEC') or die('');
 
 
 
-echo "<h3>".JText::_('COM_VIRTUEMART_CART_ORDERDONE_THANK_YOU')."</h3>";
+echo "<div class='container'><h3>".JText::_('COM_VIRTUEMART_CART_ORDERDONE_THANK_YOU')."</h3></div";
 
-echo $this->html;
+/* echo $this->html; */

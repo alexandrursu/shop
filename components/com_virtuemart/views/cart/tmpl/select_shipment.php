@@ -1,3 +1,5 @@
+
+
 <?php
 /**
  *
@@ -21,17 +23,23 @@ defined('_JEXEC') or die('Restricted access');
 
 
 	if (VmConfig::get('oncheckout_show_steps', 1)) {
-		echo '<div class="checkoutStep" id="checkoutStep2">' . JText::_('COM_VIRTUEMART_USER_FORM_CART_STEP2') . '</div>';
+		echo '<div class="container">
+<div class="checkoutStep" id="checkoutStep2">' . JText::_('COM_VIRTUEMART_USER_FORM_CART_STEP2') . '</div></div>';
 	}
 
 	if ($this->layoutName!='default') {
 		$headerLevel = 1;
 		if($this->cart->getInCheckOut()){
-			$buttonclass = 'button vm-button-correct';
+			$buttonclass = 'continue';
 		} else {
-			$buttonclass = 'default';
+			$buttonclass = 'continue';
 		}
 		?>
+<div class="container">
+<div class="row">
+    <div class="col-md-4 col-xs-12">
+    </div>
+    <div class="col-md-4 col-xs-12">
 <form method="post" id="userForm" name="chooseShipmentRate" action="<?php echo JRoute::_('index.php'); ?>" class="form-validate">
 	<?php
 	} else {
@@ -42,15 +50,6 @@ defined('_JEXEC') or die('Restricted access');
 	echo "<h".$headerLevel.">".JText::_('COM_VIRTUEMART_CART_SELECT_SHIPMENT')."</h".$headerLevel.">";
 
 	?>
-
-	<div class="buttonBar-right">
-
-	        <button  name="setshipment" class="<?php echo $buttonclass ?>" type="submit" ><?php echo JText::_('COM_VIRTUEMART_SAVE'); ?></button>  &nbsp;
-		<?php   if ($this->layoutName!='default') { ?>
-		<button class="<?php echo $buttonclass ?>" type="reset" onClick="window.location.href='<?php echo JRoute::_('index.php?option=com_virtuemart&view=cart'); ?>'" ><?php echo JText::_('COM_VIRTUEMART_CANCEL'); ?></button>
-		<?php  } ?>
-	</div>
-
 <?php
     if ($this->found_shipment_method  ) {
 
@@ -74,8 +73,20 @@ if ($this->layoutName!='default') {
     <input type="hidden" name="view" value="cart" />
     <input type="hidden" name="task" value="setshipment" />
     <input type="hidden" name="controller" value="cart" />
+	<div class="buttonBar-right">
+
+	    <button  name="setshipment" class="<?php echo $buttonclass ?> fr" type="submit" ><?php echo JText::_('COM_VIRTUEMART_SAVE'); ?></button>  &nbsp;
+		<?php   if ($this->layoutName!='default') { ?>
+		<button class="<?php echo $buttonclass ?>" type="reset" onClick="window.location.href='<?php echo JRoute::_('index.php?option=com_virtuemart&view=cart'); ?>'" ><?php echo JText::_('COM_VIRTUEMART_CANCEL'); ?></button>
+		<?php  } ?>
+</div>
 </form>
 <?php
 }
 ?>
 
+        </div>
+        <div class="col-md-4 col-xs-12">
+        </div>
+    </div>
+</div>

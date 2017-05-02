@@ -32,7 +32,6 @@ if(VmConfig::get('popup_rel',1)){
 	if($this->product and !empty($this->product->customfieldsRelatedProducts)){
 		?>
 		<div class="product-related-products">
-				<h4><?php echo JText::_('COM_VIRTUEMART_RELATED_PRODUCTS'); ?></h4>
 		<?php
 		foreach ($this->product->customfieldsRelatedProducts as $field) {
 			if(!empty($field->display)) {

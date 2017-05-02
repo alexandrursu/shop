@@ -20,7 +20,7 @@ $user		= JFactory::getUser();
 
 ?>
 <div class="item-page<?php echo $this->pageclass_sfx?>">
-
+<div class="container">
 <?php if ($this->params->get('show_page_heading')) : ?>
 	<h1>
 	<?php echo $this->escape($this->params->get('page_heading')); ?>
@@ -217,4 +217,5 @@ if (!empty($this->item->pagination) AND $this->item->pagination AND $this->item-
 <?php endif; ?>
 
 <?php echo $this->item->event->afterDisplayContent; ?>
+</div>
 </div>

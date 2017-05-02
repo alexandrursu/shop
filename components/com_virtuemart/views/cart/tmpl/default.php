@@ -83,119 +83,54 @@ $document->addStyleDeclaration ('#facebox .content {display: block !important; h
 ?>
 
 <div class="cart-view">
-
-
-	<div class="useless">
-		<div class="width50 floatleft">
-			<h1><?php echo JText::_ ('COM_VIRTUEMART_CART_TITLE'); ?></h1>
-		</div>
-		<?php if (VmConfig::get ('oncheckout_show_steps', 1) && $this->checkout_task === 'confirm') {
-		vmdebug ('checkout_task', $this->checkout_task);
-		echo '<div class="checkoutStep" id="checkoutStep4">' . JText::_ ('COM_VIRTUEMART_USER_FORM_CART_STEP4') . '</div>';
-	} ?>
-		<div class="width50 floatleft right">
-			<?php // Continue Shopping Button
-			if (!empty($this->continue_link_html)) {
-				echo $this->continue_link_html;
-			} ?>
-		</div>
-		<div class="clear"></div>
-	</div>
-
-
-
-	<?php echo shopFunctionsF::getLoginForm ($this->cart, FALSE);
-
-	// This displays the form to change the current shopper
-	$adminID = JFactory::getSession()->get('vmAdminID');
-	if ((JFactory::getUser()->authorise('core.admin', 'com_virtuemart') || JFactory::getUser($adminID)->authorise('core.admin', 'com_virtuemart')) && (VmConfig::get ('oncheckout_change_shopper', 0))) { 
-		echo $this->loadTemplate ('shopperform');
-	}
+    <div class="container">
+        <div class="useless">
+            <div class="width50 floatleft">
+                <h1><?php echo JText::_ ('COM_VIRTUEMART_CART_TITLE'); ?></h1>
+            </div>
+            <?php if (VmConfig::get ('oncheckout_show_steps', 1) && $this->checkout_task === 'confirm') {
+            vmdebug ('checkout_task', $this->checkout_task);
+            echo '<div class="container"><div class="checkoutStep" id="checkoutStep4">' . JText::_ ('COM_VIRTUEMART_USER_FORM_CART_STEP4') . '</div></div>';
+        } ?>
+            <div class="width50 floatleft right">
+                <?php // Continue Shopping Button
+                if (!empty($this->continue_link_html)) {
+                    echo $this->continue_link_html;
+                } ?>
+            </div>
+            <div class="clear"></div>
+        </div>
 
 
 
-	// This displays the pricelist MUST be done with tables, because it is also used for the emails
-	echo $this->loadTemplate ('pricelist');
+        <?php echo shopFunctionsF::getLoginForm ($this->cart, FALSE);
 
-	// added in 2.0.8
-	?>
-	<div id="checkout-advertise-box">
-		<?php
-		if (!empty($this->checkoutAdvertise)) {
-			foreach ($this->checkoutAdvertise as $checkoutAdvertise) {
-				?>
-				<div class="checkout-advertise">
-					<?php echo $checkoutAdvertise; ?>
-				</div>
-				<?php
-			}
-		}
-		?>
-	</div>
-	<?php
-	if (!VmConfig::get('oncheckout_opc', 1)) {
-		if ($this->checkout_task) {
-			$taskRoute = '&task=' . $this->checkout_task;
-		}
-		else {
-			$taskRoute = '';
-		}
-	?>
-		<form method="post" id="checkoutForm" name="checkoutForm" action="<?php echo JRoute::_ ('index.php?option=com_virtuemart&view=cart' . $taskRoute, $this->useXHTML, $this->useSSL); ?>">
-	<?php } ?>
-		<?php // Leave A Comment Field ?>
-		<div class="customer-comment marginbottom15">
-			<span class="comment"><?php echo JText::_ ('COM_VIRTUEMART_COMMENT_CART'); ?></span><br/>
-			<textarea class="customer-comment" name="customer_comment" cols="60" rows="1"><?php echo $this->cart->customer_comment; ?></textarea>
-		</div>
-		<?php // Leave A Comment Field END ?>
+        // This displays the form to change the current shopper
+        $adminID = JFactory::getSession()->get('vmAdminID');
+        if ((JFactory::getUser()->authorise('core.admin', 'com_virtuemart') || JFactory::getUser($adminID)->authorise('core.admin', 'com_virtuemart')) && (VmConfig::get ('oncheckout_change_shopper', 0))) {
+            echo $this->loadTemplate ('shopperform');
+        }
 
 
 
-		<?php // Continue and Checkout Button ?>
-		<div class="checkout-button-top">
+        // This displays the pricelist MUST be done with tables, because it is also used for the emails
+        echo $this->loadTemplate ('pricelist');
 
-			<?php // Terms Of Service Checkbox
-			if (!class_exists ('VirtueMartModelUserfields')) {
-				require(JPATH_VM_ADMINISTRATOR . DS . 'models' . DS . 'userfields.php');
-			}
-			$userFieldsModel = VmModel::getModel ('userfields');
-			if ($userFieldsModel->getIfRequired ('agreed')) {
-					if (!class_exists ('VmHtml')) {
-						require(JPATH_VM_ADMINISTRATOR . DS . 'helpers' . DS . 'html.php');
-					}
-					echo VmHtml::checkbox ('tosAccepted', $this->cart->tosAccepted, 1, 0, 'class="terms-of-service"');
+        // added in 2.0.8
+        ?>
+        <div id="checkout-advertise-box">
+            <?php
+            if (!empty($this->checkoutAdvertise)) {
+                foreach ($this->checkoutAdvertise as $checkoutAdvertise) {
+                    ?>
+                    <div class="checkout-advertise">
+                        <?php echo $checkoutAdvertise; ?>
+                    </div>
+                    <?php
+                }
+            }
+            ?>
+        </div>
 
-					if (VmConfig::get ('oncheckout_show_legal_info', 1)) {
-						?>
-						<div class="terms-of-service">
-
-							<label for="tosAccepted">
-								<a href="<?php JRoute::_ ('index.php?option=com_virtuemart&view=vendor&layout=tos&virtuemart_vendor_id=1', FALSE) ?>" class="terms-of-service" id="terms-of-service" rel="facebox"
-							  	 target="_blank">
-									<span class="vmicon vm2-termsofservice-icon"></span>
-									<?php echo JText::_ ('COM_VIRTUEMART_CART_TOS_READ_AND_ACCEPTED'); ?>
-								</a>
-							</label>
-
-							<div id="full-tos">
-								<h2><?php echo JText::_ ('COM_VIRTUEMART_CART_TOS'); ?></h2>
-								<?php echo $this->cart->vendor->vendor_terms_of_service; ?>
-							</div>
-
-						</div>
-						<?php
-					} // VmConfig::get('oncheckout_show_legal_info',1)
-					//echo '<span class="tos">'. JText::_('COM_VIRTUEMART_CART_TOS_READ_AND_ACCEPTED').'</span>';
-			}
-			echo $this->checkout_link_html;
-			?>
-		</div>
-		<?php // Continue and Checkout Button END ?>
-		<input type='hidden' name='order_language' value='<?php echo $this->order_language; ?>'/>
-		<input type='hidden' id='STsameAsBT' name='STsameAsBT' value='<?php echo $this->cart->STsameAsBT; ?>'/>
-		<input type='hidden' name='task' value='<?php echo $this->checkout_task; ?>'/>
-		<input type='hidden' name='option' value='com_virtuemart'/>
-		<input type='hidden' name='view' value='cart'/>
-	</form>
+    </div>
 </div>

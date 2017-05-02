@@ -93,7 +93,7 @@ class VirtueMartViewCart extends VmView {
 			$this->lOrderDone();
 
 			$pathway->addItem(JText::_('COM_VIRTUEMART_CART_THANKYOU'));
-			$document->setTitle(JText::_('COM_VIRTUEMART_CART_THANKYOU'));
+			$document->setTitle(JText::_('<div class="container">COM_VIRTUEMART_CART_THANKYOU</div>'));
 		} else if ($layoutName == 'default') {
 			VmConfig::loadJLang('com_virtuemart_shoppers', TRUE);
 			$cart->prepareCartViewData();
@@ -131,16 +131,16 @@ class VirtueMartViewCart extends VmView {
 			$this->checkPaymentMethodsConfigured();
 			$this->checkShipmentMethodsConfigured();
 			if ($cart->virtuemart_shipmentmethod_id) {
-				$shippingText =  JText::_('COM_VIRTUEMART_CART_CHANGE_SHIPPING');
+				$shippingText =  JText::_('<i class="fa fa-pencil"></i>');
 			} else {
-				$shippingText = JText::_('COM_VIRTUEMART_CART_EDIT_SHIPPING');
+				$shippingText = JText::_('<i class="fa fa-pencil"></i>');
 			}
 			$this->assignRef('select_shipment_text', $shippingText);
 
 			if ($cart->virtuemart_paymentmethod_id) {
-				$paymentText = JText::_('COM_VIRTUEMART_CART_CHANGE_PAYMENT');
+				$paymentText = JText::_('<i class="fa fa-pencil"></i>');
 			} else {
-				$paymentText = JText::_('COM_VIRTUEMART_CART_EDIT_PAYMENT');
+				$paymentText = JText::_('<i class="fa fa-pencil"></i>');
 			}
 			$this->assignRef('select_payment_text', $paymentText);
 
@@ -154,7 +154,7 @@ class VirtueMartViewCart extends VmView {
 
 
 			if (!VmConfig::get('use_as_catalog')) {
-				$checkout_link_html = '<a name="'.$checkout_task.'" class="vm-button-correct" href="javascript:document.checkoutForm.submit();" ><span>' . $text . '</span></a>';
+				$checkout_link_html = '<a name="'.$checkout_task.'" class="continue" href="javascript:document.checkoutForm.submit();" ><span>' . $text . '</span></a>';
 			} else {
 				$checkout_link_html = '';
 			}

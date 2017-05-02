@@ -12,7 +12,6 @@ div.acymailing_module, .acymailing_module div{
 }
 
 table.acymailing_form{
-	margin:auto;
 	border:0px !important;
 }
 
@@ -63,6 +62,5 @@ div.acymailing_module_success {
 }
 
 .acymailing_module_form .acymailing_introtext{
-	 padding-bottom:10px;
 	 display:block;
 }

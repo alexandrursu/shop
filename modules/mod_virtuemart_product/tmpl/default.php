@@ -20,9 +20,9 @@ if ($products_per_row > 1) {
 }
 	if ($display_style == "div") {
 		?>
-		<div class="vmproduct<?php echo $params->get ('moduleclass_sfx'); ?> productdetails">
+		<div class="vmproduct<?php echo $params->get ('moduleclass_sfx'); ?> productdetails row">
 			<?php foreach ($products as $product) { ?>
-			<div class="<?php echo $pwidth ?> <?php echo $float ?>">
+			<div class="col-md-2 col-xs-6">
 				<div class="spacer">
 					<?php
 					if (!empty($product->images[0])) {
@@ -34,7 +34,7 @@ if ($products_per_row > 1) {
 					echo '<div class="clear"></div>';
 					$url = JRoute::_ ('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $product->virtuemart_product_id . '&virtuemart_category_id=' .
 						$product->virtuemart_category_id); ?>
-					<a href="<?php echo $url ?>"><?php echo $product->product_name ?></a>        <?php    echo '<div class="clear"></div>';
+					<a class="prod_name" href="<?php echo $url ?>"><?php echo $product->product_name ?></a>        <?php    echo '';
 
 					if ($show_price) {
 						// 		echo $currency->priceDisplay($product->prices['salesPrice']);
@@ -116,4 +116,6 @@ if ($products_per_row > 1) {
 			<?php echo $footerText ?>
 		</div>
 		<?php endif; ?>
+
+
 </div>

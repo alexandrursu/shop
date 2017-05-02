@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system"  method="upgrade">
+	<name>EasyCompare</name>
+	<author>EasyJoomla.org</author>
+	<creationDate>April 2013</creationDate>
+	<copyright>Copyright (C) EasyJoomla.org. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>support@easyjoomla.org</authorEmail>
+	<authorUrl>www.easyjoomla.org</authorUrl>
+	<version>1.0.6</version>
+	<description>
+	  <![CDATA[
+		<h1>
+			<a class="easylogo" href="http://www.easyjoomla.org" target="_blank">
+			  	EasyJoomla.org
+			</a>
+		</h1>
+		<p>Plugin adds compare buttons to VirtueMart product detail view and category view.</p>
+		<p>Place <code style="color:black;font-weight:normal;">{easycompare &lt;?php echo $product->virtuemart_product_id ?&gt;}</code> to VirtueMart <u>category</u> template.</p>
+		<p>Place <code style="color:black;font-weight:normal;">{easycompare}</code> to VirtueMart product <u>detail</u> template.</p>
+		<p>These marks will be replaced by compare buttons.</p>
+		<p>More info about plugin at <a href="http://www.easyjoomla.org"  target="_blank" >EasyJoomla.org</a>.</p>
+	  ]]>
+	</description>
+
+	<files>
+            <filename plugin="easycompare">easycompare.php</filename>
+            <filename>index.html</filename>
+	</files>
+
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.plg_system_easycompare.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_easycompare.sys.ini</language>
+		<language tag="it-IT">it-IT/it-IT.plg_system_easycompare.ini</language>
+		<language tag="it-IT">it-IT/it-IT.plg_system_easycompare.sys.ini</language>
+		<language tag="cs-CZ">cs-CZ/cs-CZ.plg_system_easycompare.ini</language>
+		<language tag="cs-CZ">cs-CZ/cs-CZ.plg_system_easycompare.sys.ini</language>
+	</languages>
+
+	<updateservers>
+		<server type="easyjoomla" priority="1" name="Easy Joomla Update"><![CDATA[http://www.easyjoomla.org/index.php?option=com_easyupdate&view=easyupdate&element=plg_easycompare]]></server>
+	</updateservers>
+
+</extension>

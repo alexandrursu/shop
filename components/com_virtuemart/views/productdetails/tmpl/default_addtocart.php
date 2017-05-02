@@ -101,6 +101,7 @@ $alert=JText::sprintf ('COM_VIRTUEMART_WRONG_AMOUNT_ADDED', $step);
 				if (!( VmConfig::get('askprice', 0) and empty($tmpPrice) ) ) {
 					?>
 					
+					<div class="quantity-superbox">
 					<span class="quantity-box">
 						<!--<input type="text" class="quantity-input js-recalculate" name="quantity[]" onblur="check(this);"
 							   value="<?php if (isset($this->product->step_order_level) && (int)$this->product->step_order_level > 0) {
@@ -126,21 +127,33 @@ $alert=JText::sprintf ('COM_VIRTUEMART_WRONG_AMOUNT_ADDED', $step);
          </div>
 
 					</span>
-					<!--<span class="quantity-controls js-recalculate">
+					<span class="quantity-controls js-recalculate">
 					<input type="button" class="quantity-controls quantity-plus"/>
 					<input type="button" class="quantity-controls quantity-minus"/>
-					</span>-->
+					</span>
+					</div>
 					<?php // Display the quantity box END
 
 					// Display the add to cart button ?>
-          			<span class="addtocart-button">
-          			<?php echo shopFunctionsF::getAddToCartButton ($this->product->orderable);
-						// Display the add to cart button END  ?>
-         			 </span>
-					<input type="hidden" class="pname" value="<?php echo htmlentities($this->product->product_name, ENT_QUOTES, 'utf-8') ?>"/>
-					<input type="hidden" name="view" value="cart"/>
-					<noscript><input type="hidden" name="task" value="add"/></noscript>
-					<input type="hidden" name="virtuemart_product_id[]" value="<?php echo $this->product->virtuemart_product_id ?>"/>
+													   <div class="product-short-description">
+                                        	    	    	<?php  echo nl2br($this->product->product_s_desc); ?>
+
+                                   	                 </div>
+                    <div class="row">
+                      <div class="col-md-8 col-xs-8">
+                        <span class="addtocart-button">
+                        <?php echo shopFunctionsF::getAddToCartButton ($this->product->orderable);
+                            // Display the add to cart button END  ?>
+                         </span>
+                        <input type="hidden" class="pname" value="<?php echo htmlentities($this->product->product_name, ENT_QUOTES, 'utf-8') ?>"/>
+                        <input type="hidden" name="view" value="cart"/>
+                        <noscript><input type="hidden" name="task" value="add"/></noscript>
+                        <input type="hidden" name="virtuemart_product_id[]" value="<?php echo $this->product->virtuemart_product_id ?>"/>
+					  </div>
+					  <div class="col-md-4 col-xs-4">
+                           {easycompare}
+					  </div>
+					</div>
 				<?php
 				}
 				?>
